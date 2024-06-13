@@ -1,0 +1,459 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+ 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.upper-space{
+padding:8% 30% 0% 30%;
+text-align:center;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.right:hover{
+transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+.collapsible {
+  cursor: pointer;
+  width: 100%; 
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+}
+
+ .collapsible:hover {
+   border:dotted;
+   border-width:1px;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+             <!--========navbar
+                     =============-->
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="horsesinfo.html" >Pet-Horses</a>
+  <a href="horsebreeds.html">Breeds</a>
+  <a href="horseproducts.html">Products</a>
+  <a href="horsedisease.html">Diseases</a>
+  <a href="horsevaccination.html"class="active"data-blast="color">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+  
+                        
+
+      
+
+<div class="main-content">
+<div class="upper-space">
+ <h2 class="post mt-3"data-blast="bgColor"style="padding:10px">Horses Vaccination </h2>
+</div>
+<div style="padding:5%">
+<p>Vaccination guidelines are simply guidelines. They are neither mandatory nor legally binding. They are a starting point for horse owners and veterinarians to discuss the appropriate use of vaccines as part of a disease prevention program. There is no such thing as a standard protocol for all farms. There will be individual farm differences and risk factors, including: age, use, sex, exposure to outside horses and geography, which will impact on the decision making. Horse owners will also need to determine the amount of risk that they want to assume when deciding on whether or not to vaccinate. Vaccines and vaccination programs are only a small part of the disease prevention program. Managerial practices to minimize exposure and decrease stress will have major impacts on the health, productivity and performance of horses.</p>
+<br><br>
+
+
+
+ <h4 class="post mt-3">Guidelines foe Horse Vaccination </h4>
+ <div class="line" data-blast="bgColor"></div>
+<div style="padding:3%">
+<h5><p data-blast="color">Basic or Core Vaccines</p></h5>
+<div style="padding:2%">
+<p>The basic or core vaccines are those vaccines that provide protection against the diseases that have significant health risk to the horse and/or to humans through contact. These are the "no-brainers." All horses should be vaccinated with these vaccines. They include rabies, tetanus and West Nile virus. It could be easily argued that Eastern equine encephalitis should be added to this list, based on the occurrence of eleven cases of this disease in the mosquito season of 2003.</p>
+
+<p>Rabies is a well-known cause of fatal disease in many mammals. The virus is transmitted through bite wounds by affected animals such as foxes, skunks, racoons and bats, though other mammals may transmit the virus. In 2001, five cases of rabies in horses were diagnosed. In 2002, one case of rabies in a horse occurred. Rabies is a rapidly progressive disease that is preventable by vaccination. Rabies vaccines are licensed for use annually in horses and must be administered by a licensed veterinarian.</p>
+
+<p>Tetanus or lockjaw is an often fatal disease caused by the anaerobic bacteria (grows in low oxygen conditions), Clostridium tetani. The spores of Cl. tetani are commonly present in the soil and can contaminate puncture wounds, crushing wounds, open lacerations, surgical incisions and the umbilici of foals. Upon gaining entrance to the body, Cl. tetani produces a powerful neurotoxin, which blocks neurotransmission, resulting in unopposed muscle contraction and spasm (tetany). Horses of all ages can be affected. Horses are the most susceptible of all of the animal species. All adult horses should initially be vaccinated for tetanus twice, three to six weeks apart, using tetanus toxoid and boostered annually or as recommended by their veterinarian. Tetanus antitoxin is administered to non-immunized horses (or ones where their immune status is unknown) that sustain a wound that has become contaminated. It is prepared from the blood of healthy, hyperimmunized horses and provides immediate passive immunity lasting 7-14 days.</p>
+<p>West Nile virus (WNv) is spread by mosquitoes and causes encephalitis in humans and horses. It is present in mosquito pools and birds in every county of the province of Ontario. In 2002, 108 confirmed or probable cases of WNv in horses were reported. In 2003, only ten equine cases were diagnosed. Since WNv is a fatal disease in 30% of horses that show neurological signs, it is important to protect horses against this virus. After the initial two-shot regimen, the manufacturers recommend annual revaccination. In high exposure areas, some veterinarians recommend booster vaccinations every 4-6 months during the mosquito season. Two pharmaceutical companies now manufacture a WNv vaccine.</p>
+
+<p>Eastern equine encephalitis (EEE) virus is spread by a mosquito that normally feeds on birds. People, horses, pigs and birds may become infected during periods of high mosquito populations. The EEE virus has a range from southeastern Canada to the southeastern United States as well as the Carribean and South and Central America. Eighty to ninety percent of infected horses develop acute and lethal disease, with survivors developing neurologic signs. From 1938 to 2002, there were five outbreaks of EEE diagnosed in Ontario. During 2003, eleven equine cases were diagnosed in five locations. EEE occurs sporadically from year to year but is thought to reoccur in the same general areas associated with its mosquito vector. There are vaccines available to prevent EEE. Horses in the Muskoka-Bracebridge area would be at a higher risk based on the previous history of this disease in Ontario.</p>
+</div>
+
+<h5><p data-blast="color">Optional Vaccines</p></h5>
+<div style="padding:2%">
+<p>Diseases for which the vaccines are optional are those that;<p>
+<div style="padding:2%"><ul data-blast="color">
+   <li><p> have variable impacts on the health of the animal.</p></li>
+    <li><p> often have low risk of causing life-threatening disease.</p></li>
+     <li><p>the vaccine(s) is less than perfect in its ability to prevent disease (due to the biology of the agent).</p></li>
+    <li><p> occur primarily in a specific regional or geographic area.</p></li>
+    <li><p> a management factor significantly increases the risk of developing the disease, e.g., botulism and feeding silage.</p></li>
+</ul></div>
+
+
+<p>Equine influenza is an acute, contagious, respiratory disease caused by two distinct subtypes (subtype 1: H7N7 and subtype 2: H3N8) of influenza A viruses. Only influenza subtype AE-2 has been isolated over the last 20 years worldwide. Vaccination with an AE-2 vaccine (with the most up-to-date North American strains) is recommended for use;</p>
+<div style="padding:2%"><ul data-blast="color">
+    <li><p> especially in horses 1 to 5 years of age, since they seem to be more susceptible to the disease and</p></li>
+    <li><p> in situations where there are frequent contacts with large numbers of horses, e.g., new arrivals to the barn/track, attendance at shows.</p></li>
+    <li><p> While vaccination does not necessarily prevent influenza, the disease in vaccinated horses is less severe and the signs last a shorter period than when horses are unvaccinated. A modified live equine AE-2 influenza vaccine for intranasal administration has recently become available commercially.</p></li>
+</ul></div>
+
+
+<p>Equine Herpesvirus is also known as equine viral rhinopneumonitis. There are numerous strains of Equine Herpesvirus (EHV) that are passed between horses by body fluids, including nasal secretions. Horses commonly have antibody titres to EHV subtypes 1, 2 and 4. This indicates that they have been exposed to the viruses at some time in their life. Subtypes 1 and 4 can cause central-nervous-system disease, respiratory disease and abortion. Neurologic disease may occur after a herpesvirus respiratory disease infection. Modified live-virus vaccines and killed-virus vaccines are available. These vaccines are labeled for the prevention of respiratory disease and abortion. The manufacturers do not make claims about the prevention of neurologic disease. Performance horses, which are continually in contact with new horses and stable mates, should be protected using an EHV-4 vaccine. A vaccine for intranasal administration has recently become available commercially. Pregnant mares are often vaccinated with a killed vaccine. Mares may still abort despite being vaccinated as per the manufacturer's recommendations. Some horses will be chronic shedders of the virus and spread the virus to other herd mates when stressed.</p>
+
+<p>Strangles is a highly contagious and serious infection of horses and other equids caused by the bacterium, Streptococcus equi. The disease is characterized by severe inflammation of the mucosa of the head and throat, with extensive swelling and, often, rupture of the lymph nodes, which produces large amounts of thick, creamy pus. Strangles is most common in animals less than five years of age and especially in groups of weanling foals or yearlings. A live, attenuated S. equi vaccine (Pinnacle TM I.N. by Fort Dodge) has been introduced as an intranasal vaccine for the prevention of strangles. This approach to vaccination is intuitively more attractive than a killed, intramuscular vaccine, since it produces the local antibodies necessary for protective immunity. Because the vaccine is a live but attenuated (using a low virulence organism) S. equi, care should be taken to avoid contamination of injections elsewhere in the horse. Concurrent injection of other vaccines has resulted in S. equi abscesses at these sites, presumably through inadvertent contamination.</p>
+
+<p>Potomac horse fever (PHF) is caused by the bacteria Ehrlichia risticii. It is maintained in nature in a complex aquatic ecosystem. Transmission to horses can occur through accidental ingestion of insects, such as caddisflies, damselflies, dragonflies, and stoneflies, containing infected E. risticii. There are thought to be at least six strains of the agent. The vaccine is made from a single strain. Fully vaccinated horses have developed Potomac horse fever. PHF seems to be most prevalent in two areas of the province (Brighton, Cannington). A primary two-shot immunization, followed by an annual booster, should be considered for horses in areas where PHF has previously been diagnosed.</p>
+
+<p>Botulism is a disease that occurs when toxins produced by the bacterium, Clostridium botulinum, enter the horse's body causing weakness, which may progress to paralysis. The botulism bacterium is a spore-forming anaerobic bacteria (grows in the absence of oxygen) which can occur in decaying plant material. Horses are the most sensitive of the domesticated animals to botulism. Hay and especially hay silage can be contaminated with the bacteria during the raking and baling process. Hay silage can be a great feed when preserved properly but carries the danger of botulism. A toxoid vaccine should be used three times initially, one month apart, followed by an annual booster if hay silage is going to be fed. The vaccine protects against type B botulism only.</p>
+
+<p>Equine viral arteritis (EVA) was first identified in 1953 following an extreme respiratory-abortion syndrome on a standardbred farm in Ohio. EVA causes panvasculitis (inflammation of the veins and arteries) that results in edema of the limbs and an urticaria-like reaction of the head, neck and trunk. After an incubation period of 3-14 days, clinical signs can include any combination or all of the following: anorexia; fever up to 41oC for 1-9 days; depression; limb edema, especially of the hind limbs, scrotum and prepuce; stiffness of gait; nasal and ocular discharges; skin rash; abortion in the mare; and, infrequently, respiratory distress, coughing and diarrhea in the young foal. EVA can result in the establishment of the carrier state with shedding of virus into the semen in a significant percentage of infected stallions. A positive titre, from either natural infection or vaccination, to this virus may prevent a horse or its semen being exported to another country. Prior to vaccination, refer to importation guidelines (of the country of destination) should exportation be contemplated.</p>
+</div>
+
+
+<h5><p data-blast="color">Risk Factor: In and Out Traffic</p></h5>
+<div style="padding:3%">
+<p>Barns and stables where there is a lot of "in and out traffic" significantly increase the risk of exposure to the viral and bacterial agents, especially influenza, rhinopneumonitis and strangles. Since pregnant mares represent a tremendous investment in time and money, they should be kept completely separate from the highly mobile racing and show horses. Failure to maintain this biological separation may lead to abortion storms with a significant number of pregnant mares aborting. Horses maintained on rural properties with little or no contact with other horses have minimal risk of coming in contact with these agents. However, if they do, they often exhibit severe signs of disease since their immune systems are relatively naive (little or no immunity).</p>
+
+
+<p>Approaches used to control the highly contagious respiratory diseases will depend on the circumstances of the individual horse or horse farm, but all people involved with horses need to maintain constant vigilance. These approaches involve a combination of knowledge of the history of individual animals and their source of origin, general hygiene, quarantine, and immunization, with appropriate action if an outbreak occurs. For further reading, refer to the OMAF Factsheet Biosecurity for Horse Farms, Order No. 00-091, available on the horse section of the Ontario Ministry of Agriculture and Food's web site www.omafra.gov.on.ca/english/livestock.</p>
+</div>
+
+
+<h5><p data-blast="color">Risk Factor: Age</p></h5>
+<div style="padding:3%">
+<p>Passive immunity (protective immunoglobulins absorbed from the mare's colostrum) provides virtually all of the foal's antibody protection for the first 9-12 weeks of age. Foals begin to produce protective immunoglobulins (active immunity) immediately after birth when they are first exposed to antigens. However, a protective concentration of these immunoglobulins (active immunity) may not be reached until the foal is two months of age. To maximize the foal's protection to the common pathogens, mares should be vaccinated 4-6 weeks prior to foaling. Vaccination of the foal usually should not start until six months of age. Foal vaccination is delayed until six months of age when maternal antibody concentrations are waning and less likely to interfere with the foal's ability to produce active immunity to vaccines. For tetanus (tetanus toxoid), Eastern equine encephalitis (EEE) and West Nile virus (WNv);</p>
+<div style="padding:2%"><ul data-blast="color">
+   <li><p> Foals from non-vaccinated mares should receive their first vaccination between 3 and 4 months of age; the second between 4 and 5 months of age; a third between 5 and 6 months of age.</p></li>
+   <li><p> Foals from vaccinated mares should receive their first vaccination at 6 months of age, followed by boosters at 4 to 6-week intervals, e.g., booster vaccinations at 7 and 8 to 9 months of age.</p></li>
+</ul></div>
+</div>
+
+
+<h5><p data-blast="color">Risk Factor: Pregnancy</p></h5>
+<div style="padding:3%">
+<p>Pregnant mares are definitely at the greatest risk of being affected by an infectious agent such as bacteria and viruses. The agent can either kill the fetus in utero directly or cause hyperthemia, which can also result in abortion. In either case, the financial loss is tremendous. Some infectious agents, such as herpesvirus can lay dormant (latent) in horses until they are stressed by circumstances such as shipping. The virus becomes active again and results in virus shedding. Pregnant mares become infected and abortion storms can ensue. It is for this reason, management practices, such as separation of all mares from the "in and out traffic" to the farm, are the number one tool in preventing abortions. The use of vaccines is a small part of the overall management strategy.</p>
+</div>
+
+<h5><p data-blast="color">Risk Factor: Geographic Location</p></h5>
+<div style="padding:3%">
+<p>Different disease agents have different geographic distributions. This can be related to;</p>
+<div style="padding:2%"><ul data-blast="color">
+   <li><p> the ecology of the vector, e.g., Culiseta melanura, the mosquito vector of EEE, seems to be confined to some swamps and is probably related to the migration of birds from infected areas in the Southern USA to the same general summer ranges.</p></li>
+   <li><p> Potomac horse fever is generally reported from Eastern Ontario. This may be related to the complex aquatic ecosystem associated with the insect vectors (caddisflies, damselflies, dragonflies, and stoneflies). Horse owners report very large hatches of these insects at certain times of the year in these areas.</p></li>
+</ul></div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+              
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html"">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html"class="active" data-blast="color">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

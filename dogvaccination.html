@@ -1,0 +1,428 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.upper-space{
+padding:8% 30% 0% 30%;
+text-align:center;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="dogsinfo.html" >Pet-Dogs</a>
+  <a href="dogbreeds.html">Breeds</a>
+  <a href="dogproducts.html">Products</a>
+  <a href="dogdisease.html">Diseases</a>
+  <a href="dogvaccination.html"class="active"data-blast="color">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+
+<div class="main-content">
+<div class="upper-space">
+ <h2 class="post mt-3"data-blast="bgColor"style="padding:10px">Dog Vaccinations </h2>
+</div>
+<div style="padding:5%">
+              
+<p>   Dog vaccinations play a critical role in protecting your dog from many dangerous and even fatal diseases. While state law requires all dogs are vaccinated for rabies, there are a number of other vaccinations that can protect your dog from serious diseases that are easily preventable.</p>
+
+<p>At Indian Trail Animal Hospital we have spent decades educating people about the benefits of dog vaccinations. This includes what vaccines are necessary and how they should be scheduled. Over the years we have been asked every question possible about dog vaccinations and we have compiled some of the most frequently asked ones for you here. This is only meant to be a general introduction dog vaccinations. At your dog's next veterinary appointment, we will be happy to help you understand the vaccination recommendations for your dog.</p>
+
+<h4 class="post mt-3">Dog Vaccinations </h4>
+ <div class="line" data-blast="bgColor"></div>
+ <div style="padding:5%">
+<h5><p data-blast="color">What Are Dog Vaccines And Why Are They Important?</p></h5>
+
+<p>Vaccines help prepare a dog's immune system to defend itself from any invasion of disease-causing organisms. Vaccines contain antigens, which mimic disease-causing organisms in a dog's immune system, but don't actually cause disease. The purpose of puppy vaccines and dog vaccines is to mildly stimulate the immune system by having it recognize the antigens present. This way, if a dog becomes exposed to the real disease, it's immune system will recognize it, and therefore be prepared to fight it off, or at the least reduce its effects.</p>
+
+<h5><p data-blast="color">What Are The Core Dog Vaccinations?</p></h5>
+
+<p>Core puppy vaccinations and dog vaccinations are considered vital to all canines based on a universal risk of exposure, the severity of disease, and the risk of transmission to other dogs, as well as other animal species including human beings.</p>
+
+<p>The American Animal Hospital Association's Canine Task Force considers the following dog vaccinations to be core:</p>
+<div style="padding:3%"><ul data-blast="color">
+   <li><p> Canine Parvovirus</p></li>
+    <li><p>Canine Distemper</p></li>
+    <li><p> Hepatitis</p></li>
+    <li><p> Rabies</p></li>
+    <li><p> Leptospirosis</p></li>
+</ul></div>
+
+<p>Non core - vaccines include</p>
+<div style="padding:3%"><ul data-blast="color">
+   <li><p> Bordetella</p></li>
+   <li><p> Canine Influenza (dog flu)</p></li>
+    <li><p>Lyme vaccine</p></li>
+</ul></div>
+
+<p>Although these vaccines are not considered Core, they are very important for most dogs who may be exposed to these infectious diseases. At your dog's next appointment, we will be happy to review which of the above make the most sense for your dog and make the appropriate recommendations.</p>
+
+<p>Rabies vaccinations are required by law in most states, including NC. Owners must periodically have their dogs and puppies vaccinated against rabies, but the specific time frames for puppy vaccinations and dog vaccinations vary by state. In NC, puppy rabies vaccine is generally given at 16 weeks ( no earlier than week 12), and the rabies vaccination is good for one year. For adult dogs, the rabies vaccination is good for three years and should be addressed at the time of the first visit for new patients. For example, a puppy would receive the rabies vaccine at 16 weeks, 1 year and then again at age 4.</p>
+
+
+<h5><p data-blast="color">Are There Optional Dog Vaccines?</p></h5>
+
+<p>Although puppy vaccines and dog vaccinations are very important to the overall health and wellness of your canine companion, not every puppy or dog needs to be vaccinated against every disease. Some canine vaccinations should only be administered depending upon factors including:</p>
+<div style="padding:3%"><ul data-blast="color">
+   <li><p> Age</p></li>
+  <li><p>  Medical history</p></li>
+   <li><p> Environment</p></li>
+    <li><p>Travel habits</p></li>
+   <li><p> Lifestyle</p></li>
+</ul></div>
+
+<p>Therefore, it is very important for us to discuss the vaccination protocol that's right for your canine companion at your next appointment.</p>
+<h5><p data-blast="color">When To Start Puppy Vaccinations?</p></h5>
+
+<p>In general, a puppy should start vaccines as soon as you get the puppy (this is usually between 6 and 8 weeks) and then every three weeks until approximately four months of age when it will receive the final round. Generally, if the puppy's mother has a healthy immune system, it will most likely receive antibodies in the mother's milk while nursing. After a puppy has been weaned off of the mother's milk, vaccinations should begin.</p>
+
+
+<h5><p data-blast="color">Puppy Vaccination Schedule</p></h5>
+
+<p>We typically recommend the following vaccination schedule for puppies:</p>
+<div style="padding:3%"><ul data-blast="color">
+   <li><p>  6-7 weeks: DHPP*, Bordetella</p></li>
+   <li><p>  9-10 weeks: DHPP, Bordetella, Leptospirosis</p></li>
+   <li><p>  12-13 weeks: DHPP, Leptospirosis, Canine Influenza**, Lyme Disease</p></li>
+   <li><p>  15-17 weeks: DHPP, Rabies, Canine Influenza, Lyme Disease</p></li>
+</ul></div>
+
+<p>**Canine influenza and Lyme vaccinations are given depending on the lifestyle of the dog</p>
+
+<p>*DHPP - distemper, hepatitis, parvovirus, parainfluenza.</p>
+
+<p>It is important to stay current with your puppy vaccine schedule. Puppy vaccinations have been medically proven to combat many preventable diseases and illnesses that can occur without proper immunizations. Adhering to a puppy vaccine schedule is synonymous with responsible puppy care. Your puppy deserves every chance to be healthy and happy for life and vaccinations play an important role. Don't run the risk of your puppy contracting one of these terrible diseases, when they are so easily preventable.</p>
+
+<p>**Some puppies may need additional vaccinations against parvovirus after 15 weeks of age. Consult with the veterinarian at your next appointment.</p>
+
+<h5><p data-blast="color">Dog Vaccination Schedule</p></h5>
+
+<p>Once your puppy reaches adulthood, and all of the core puppy vaccines have been administered, your veterinarian can begin implementing an adult dog vaccination schedule. A dog vaccination schedule consists of periodic adult boosters*, which are combinations of the same type of DHPP vaccine administered to puppies, along with several other additions.</p>
+
+<p>When dogs come in for their first one year visit, we recommend boostering their DHPP, Leptospirosis, and Rabies vaccines as well as Canine Influenza and Lyme if the lifestyle of the dog requires these vaccines. If Kennel Cough (Bordetella) is due at this time, it should also be administered.</p>
+<h5><p data-blast="color">The Amount Of Time Each Vaccination Is Effective Is As Follows:</p></h5>
+<div style="padding:3%"><ul data-blast="color">
+   <li><p>   DHPP - 3 years</p></li>
+   <li><p>   Rabies - 3 years</p></li>
+   <li><p>   Leptospirosis - 1 year</p></li>
+   <li><p>   Canine Influenza - 1 year</p></li>
+   <li><p>   Lyme Disease - 1 year</p></li>
+   <li><p>   Bordetella (Kennel Cough) - 1 year</p></li>
+</ul></div>
+
+<h5><p data-blast="color">Side Effects And Risks Associated With Dog Vaccinations</p></h5>
+
+<p>The benefits of vaccinations far outweigh any risks. Adverse reactions to dog vaccines are rare. However, as with any medication or immunization protocol, puppy vaccinations and dog vaccinations can cause some side effects. We do recommend that you have your puppy or dog vaccinated at time when when you can monitor them after the vaccination.</p>
+
+<p>If your dog does experience any reaction to vaccinations, symptoms may include:</p>
+<div style="padding:3%"><ul data-blast="color">
+   <li><p> Fever</p></li>
+   <li><p> Sluggishness</p></li>
+   <li><p> Loss of appetite</p></li>
+   <li><p> Facial or paw swelling and/or hives</p></li>
+   <li><p> Vomiting</p></li>
+   <li><p>Diarrhea</p></li>
+   <li><p> Pain or swelling around the injection site</p></li>
+   <li><p>Collapse, difficulty breathing, and seizures (anaphylactic shock)</p></li>
+</ul></div>
+
+<p>Just as with human vaccines, mild symptoms can be ignored. The majority of reactions are mild and short lived. If you suspect a more severe reaction to puppy vaccines or dog vaccines, such as facial swelling, vomiting or lethargy, you should contact your veterinarian immediately.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html"class="active" data-blast="color">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

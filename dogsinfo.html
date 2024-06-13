@@ -1,0 +1,475 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+ float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+ 
+  color: blue;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ position: fixed;
+
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.info{
+padding:8%;
+padding-left:6%;
+}
+img{
+width:40%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+transition: transform .9s;
+}
+
+
+img:hover{
+ transform: scale(1.3);
+ border-radius:50%;
+border:4px solid black;
+}
+
+.navbar-brand {
+    color: #000;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 5px 0 0 10px;
+    text-transform: uppercase;
+   
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+
+
+<div id="dots">
+ <div class="topnav" id="myTopnav"data-blast="color">
+<div class="container" >
+         
+             
+                                       <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+ </div>
+
+ <a href="dogsinfo.html" class="active"data-blast="color">Pet-Dogs</a>
+  <a href="dogbreeds.html">Breeds</a>
+  <a href="dogproducts.html">Products</a>
+  <a href="dogdisease.html">Diseases</a>
+  <a href="dogvaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+ 
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div>
+
+</div >
+<div>
+              
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Dogs </h4>
+                        <div class="line" data-blast="bgColor"></div>
+                        <p>The dog or domestic dog (Canis familiaris) is a domesticated descendant of the ancient, extinct wolf which is characterised by an upturning tail. It belongs to the genus Canis. The dog is derived from an ancient, extinct wolf, and the modern wolf is the dog's nearest living relative. The dog was the first species to be domesticated, by hunter–gatherers over 15,000 years ago, before the development of agriculture.</p>
+
+<p>Due to their long association with humans, dogs have expanded to a large number of domestic individuals and gained the ability to thrive on a starch-rich diet that would be inadequate for other canids. Over the millennia, dogs became uniquely adapted to human behavior, and the human-canine bond has been a topic of frequent study.</p>
+
+<p>The dog has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes. Dog breeds vary widely in shape, size, and color. They perform many roles for humans, such as hunting, herding, pulling loads, protection, assisting police and the military, companionship, therapy, and aiding disabled people. This influence on human society has given them the sobriquet of "man's best friend".</p> 
+<br><br>           
+                            <figure>
+                                <img src="images/A5.jpg" alt="">
+                            </figure>
+
+                    </div>        
+  
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Skeleton </h4>
+                        <div class="line" data-blast="bgColor"></div>
+<p>All healthy dogs, regardless of their size and type, have an identical skeletal structure with the exception of the number of bones in the tail, although there is significant skeletal variation between dogs of different types.The dog’s skeleton is well adapted for running; the vertebrae on the neck and back have extensions for powerful back muscles to connect to, the long ribs provide plenty of room for the heart and lungs, and the shoulders are unattached to the skeleton allowing great flexibility.</p>
+
+<p>Compared to the dog's wolf-like ancestors, selective breeding since domestication has seen the dog’s skeleton greatly enhanced in size for larger types as mastiffs and miniaturised for smaller types such as terriers; dwarfism has been selectively utilised for some types where short legs are advantageous such as dachshunds and corgis.Most dogs naturally have 26 vertebrae in their tails, but some with naturally short tails have as few as three.</p>
+
+<p>The dog's skull has identical components regardless of breed type, but there is significant divergence in terms of skull shape between types. The three basic skull shapes are the elongated dolichocephalic type as seen in sighthounds, the intermediate mesocephalic or mesaticephalic type, and the very short and broad brachycephalic type exemplified by mastiff type skulls.</p>   
+<br><br>
+                         <figure>
+                                <img src="images/3.jpg" alt="">
+                            </figure>
+<br><br>
+<p><span><b>Senses : </b></span>A dog's senses include vision, hearing, smell, taste, touch, and sensitivity to Earth's magnetic field. Another study has suggested that dogs can see Earth's magnetic field.</p>
+<p><span><b>Coat : </b></span>The coats of domestic dogs are of two varieties: "double" being familiar with dogs (as well as wolves) originating from colder climates, made up of a coarse guard hair and a soft down hair, or "single", with the topcoat only. Breeds may have an occasional "blaze", stripe, or "star" of white fur on their chest or underside. Premature graying can occur in dogs from as early as one year of age; this is associated with impulsive behaviors, anxiety behaviors, fear of noise, and fear of unfamiliar people or animals.</p>
+<p><span><b>Tail : </b></span>There are many different shapes for dog tails: straight, straight up, sickle, curled, or corkscrew. As with many canids, one of the primary functions of a dog's tail is to communicate their emotional state, which can be crucial in getting along with others. In some hunting dogs the tail is traditionally docked to avoid injuries. </p>
+<br><br>                    <figure>
+                                <img src="images/D5.png" alt="">
+                            </figure>
+                   </div>
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Health </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Some breeds of dogs are prone to specific genetic ailments such as elbow and hip dysplasia, blindness, deafness, pulmonic stenosis, cleft palate, and trick knees. Two severe medical conditions significantly affecting dogs are pyometra, affecting unspayed females of all breeds and ages, and Gastric dilatation volvulus, which affects larger breeds or deep-chested dogs. Both of these are acute conditions and can kill rapidly. Dogs are also susceptible to parasites such as fleas, ticks, mites, hookworms, tapeworms, roundworms, and heartworms, which is a roundworm species that lives in the hearts of dogs.</p>
+
+<p>Several human foods and household ingestibles are toxic to dogs, including chocolate solids, causing theobromine poisoning, onions and garlic, causing thiosulphate, sulfoxide or disulfide poisoning, grapes and raisins, macadamia nuts, and xylitol. The nicotine in tobacco can also be dangerous to dogs. Signs of ingestion can include copious vomiting (e.g., from eating cigar butts) or diarrhea. Some other symptoms are abdominal pain, loss of coordination, collapse, or death.</p>
+
+<p>Dogs are also vulnerable to some of the same health conditions as humans, including diabetes, dental and heart disease, epilepsy, cancer, hypothyroidism, and arthritis.</p>
+ <br><br>                      <figure>
+                                <img src="images/D1.jpg" alt="">
+                            </figure>
+                   </div>        
+                    
+                    
+                   <div class="info">
+
+                       <h4 class="post mt-3">Health Benefits </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+                   <p> Dogs suffer from the same common disorders as humans; these include cancer, diabetes, heart disease and neurologic disorders. Their pathology is similar to humans, as is their response to treatment and their outcomes. Researchers are identifying the genes associated with dog diseases similar to human disorders, but lack mouse models to find cures for both dogs and humans. The genes involved in canine obsessive-compulsive disorders led to the detection of four genes in humans' related pathways.</p>
+
+<p>The scientific evidence is mixed as to whether a dog's companionship can enhance human physical health and psychological well-being. Studies suggesting that there are benefits to physical health and psychological well-being have been criticized for being poorly controlled.It found that "the health of elderly people is related to their health habits and social supports but not to their ownership of, or attachment to, a companion animal." Earlier studies have shown that people who keep pet dogs or cats exhibit better mental and physical health than those who do not, making fewer visits to the doctor and being less likely to be on medication than non-guardians.</p>
+
+<p>A 2005 paper states "recent research has failed to support earlier findings that pet ownership is associated with a reduced risk of cardiovascular disease, a reduced use of general practitioner services, or any psychological or physical benefits on health for community dwelling older people. Research has, however, pointed to significantly less absenteeism from school through sickness among children who live with pets."In one study, new guardians reported a highly significant reduction in minor health problems during the first month following pet acquisition. This effect was sustained in those with dogs through to the end of the study.</p>
+
+<p>People with pet dogs took considerably more physical exercise than those with cats and those without pets. The results provide evidence that keeping pets may have positive effects on human health and behavior and that for guardians of dogs, these effects are relatively long-term. Pet guardianship has also been associated with increased coronary artery disease survival. Human guardians are significantly less likely to die within one year of an acute myocardial infarction than those who did not own dogs. The association between dog ownership and adult physical activity levels has been reviewed by several authors.</p>
+
+<p>The health benefits of dogs can result from contact with dogs in general, not solely from having dogs as pets. For example, when in a pet dog's presence, people show reductions in cardiovascular, behavioral and psychological indicators of anxiety.Other health benefits are gained from exposure to immune-stimulating microorganisms, which can protect against allergies and autoimmune diseases according to the hygiene hypothesis. The benefits of contact with a dog also include social support, as dogs cannot only provide companionship and social support themselves but also act as facilitators of social interactions between humans. One study indicated that wheelchair users experience more positive social interactions with strangers when accompanied by a dog than when they are not. In 2015, a study found that pet owners were significantly more likely to get to know people in their neighborhood than non-pet owners.</p>
+
+<p>Using dogs and other animals as a part of therapy dates back to the late 18th century, when animals were introduced into mental institutions to help socialize patients with mental disorders.Animal-assisted intervention research has shown that animal-assisted therapy with a dog can increase social behaviors, such as smiling and laughing, among people with Alzheimer's disease. One study demonstrated that children with ADHD and conduct disorders who participated in an education program with dogs and other animals showed increased attendance, increased knowledge and skill objectives and decreased antisocial and violent behavior compared with those not in an animal-assisted program.</p>
+
+                     <br><br>                      <figure>
+                                <img src="images/D3.jpg" alt="">
+                            </figure>
+                   </div>        
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Breeds</h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Dogs are the most variable mammal on earth with around 450 globally recognized dog breeds.In the Victorian era, directed human selection developed the modern dog breeds, which resulted in a vast range of phenotypes.Most breeds were derived from small numbers of founders within the last 200 years,and since then dogs have undergone rapid phenotypic change and were formed into today's modern breeds due to artificial selection imposed by humans. The skull, body, and limb proportions vary significantly between breeds, with dogs displaying more phenotypic diversity than can be found within the entire order of carnivores. These breeds possess distinct traits related to morphology, which include body size, skull shape, tail phenotype, fur type and colour. Their behavioural traits include guarding, herding, and hunting, retrieving, and scent detection. Their personality traits include hypersocial behavior, boldness, and aggression,which demonstrates the functional and behavioral diversity of dogs.</p><p> As a result, today dogs are the most abundant carnivore species and are dispersed around the world. The most striking example of this dispersal is that of the numerous modern breeds of European lineage during the Victorian era.</p>
+<br><br>                      <figure>
+                                <img src="images/D4.jpg" alt="">
+                            </figure>
+                   </div>        
+
+                    <div class="info">
+
+                       <h4 class="post mt-3">Lifespan </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>The typical lifespan of dogs varies widely among breeds, but for most, the median longevity (the age at which half the dogs in a population have died and half are still alive) ranges from 10 to 13 years. The median longevity of mixed-breed dogs, taken as an average of all sizes, is one or more years longer than that of purebred dogs when all breeds are averaged. For dogs in England, increased body weight has been found to be negatively correlated with longevity (i.e., the heavier the dog, the shorter its lifespan), and mixed-breed dogs live on average 1.2 years longer than purebred dogs.</p>
+ <br><br>                      <figure>
+                                <img src="images/D2.jpg" alt="">
+                            </figure>
+                   </div>        
+
+                    <div class="info">
+
+                       <h4 class="post mt-3">Dog Communication </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Dog communication is how dogs convey information to other dogs, understand messages from humans and translate the information that dogs are transmitting. Communication behaviors of dogs include eye gaze, facial expression, vocalization, body posture (including movements of bodies and limbs), and gustatory communication (scents, pheromones, and taste). Humans communicate to dogs by using vocalization, hand signals, and body posture.</p>
+ <br><br>                      <figure>
+                                 <iframe width="80%" height="80%"
+src="https://www.youtube.com/embed/kbRZehrwH4w">
+</iframe> 
+                            </figure>
+    <figure><br><br>
+                                 <iframe width="80%" height="80%"
+src="https://www.youtube.com/embed/wvdHbnI_6DQ">
+</iframe> 
+
+
+ 
+                            </figure>
+                   </div>   
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html"class="active" data-blast="color">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

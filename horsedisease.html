@@ -1,0 +1,565 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+ 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.upper-space{
+padding:8% 30% 0% 30%;
+text-align:center;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.right:hover{
+transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+.collapsible {
+  cursor: pointer;
+  width: 100%; 
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+}
+
+ .collapsible:hover {
+   border:dotted;
+   border-width:1px;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+             <!--========navbar
+                     =============-->
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="horsesinfo.html" >Pet-Horses</a>
+  <a href="horsebreeds.html">Breeds</a>
+  <a href="horseproducts.html">Products</a>
+  <a href="horsedisease.html"class="active"data-blast="color">Diseases</a>
+  <a href="horsevaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+  
+                        
+
+      
+
+<div class="main-content">
+<div class="upper-space">
+ <h2 class="post mt-3"data-blast="bgColor"style="padding:10px">Horses Diseases </h2>
+</div>
+<div style="padding:5%">
+<p> horses are social creatures, and they have a host of infectious diseases that plague them from time to time! Horse disease is passed from horse to horse or by a parasitic host, these diseases are dangerous and can be fatal. But, the truly self-respecting horse lover, such as yourself, would have already learned all about these infectious diseases and the preventive methods of care. Also, before becoming a horse owner you’ve probably learned about horse evaluation too. And relative to this, I believe that you would also agree that it is good to refresh our knowledge and maybe even pick up some new information on the common infectious diseases that horses can contract and the importance of Coggins and health certificates for horses.</p>
+<br><br>
+
+
+<!=========BOTULISM  info
+=======================================================-->
+
+ <h4 class="post mt-3">BOTULISM</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>botulism is most often thought of as something that can show up in canned food, the disease is actually a problem for horses as well. Horses are affected by this horse disease – the toxin that’s produced by the bacterium Clostridium botulinum.</p>
+
+<p>Horses can be infected with the botulism toxin in three different ways: </p>
+<div style="padding:2%"> <ul data-blast="color">
+    <li><p>With any deep puncture wound or when a wound results in considerable dead tissue.</p></li>
+   <li><p> When the horse accidentally ingests the bacteria found in the tightly compressed hay bales. This usually happens when a rodent or other animal dies in a field where hay is cut and processed. The tightly compressed hay bales create a perfect growth environment for the oxygen-hating Clostridium botulinum.</p></li>
+   <li><p> When the horse ingests bacteria that are living in pasture soil.</p></li>
+</ul></div>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+
+<div class="content">
+ <div style="padding:2%"> 
+<p><b>Symptoms</b></p>
+<div style="padding:2%">
+<p>The first sign of this horse disease you may notice in your horse is the inability to swallow or a lot of drooling. The horse may not be able to get up after lying down, and he may begin to lose control of his muscles. In the early stages, you may also see his muscles quiver and tremble.</p>
+</div>
+
+<p><b>Diagnosis and Treatment</b></p>
+<div style="padding:2%"> 
+<p>No specific diagnostic test for botulism exists, and blood work on affected horses is typically normal. Veterinarians make a diagnosis based on clinical signs. Although serum and feces can be submitted to a lab for toxin analysis, the vet will probably begin treatment immediately because time is of the essence when you’re combating this disease. Treatment involves giving the horse hyperimmune plasma that’s very high in antitoxin titers. However, because botulism types vary, the vet has to use plasma that’s specific to the particular toxin that affected the sick horse.</p>
+</div>
+
+<p><b>Horse Disease Prevention</b></p>
+<div style="padding:2%"> 
+<p>To help prevent botulism, inspect your horse’s hay regularly for animal carcasses that may have been accidentally baled into it. If you find animal parts, don’t feed the rest of the bale to your horse, and keep an eye on him for possible symptoms. Wound botulism can be prevented by calling a veterinarian right away if your horse seriously injures himself. Immediate treatment of the wound can help ward off this horse disease, botulism.</p>
+</div>
+</div>
+</div><br><br>
+
+
+     <!--=======STRANGLES info
+           ===========================================-->
+
+ <h4 class="post mt-3">STRANGLES</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p> Strangles sound nasty, and it is. This horse disease is caused by the Streptococcus equi bacterium, this disease affects the lymph nodes. Strangles commonly occurs in younger horses between the ages of four months and five years. Older horses seem to be less susceptible, probably because their immune systems are more developed. The horse disease strangles is transmitted from horse to horse, either by direct or indirect contact. A horse with strangles can contaminate a drinking trough, exposing all other horses who drink from that same trough. Horses can also pick up the disease from contaminated stalls.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+
+<div class="content">
+        <div style="padding:2%"> 
+          
+<p><b>Symptoms</b></p>
+ <div style="padding:2%"> 
+          <p>Strangles causes fever, lethargy, and a thin, watery nasal discharge that eventually becomes very thick, and usually yellow. Horses usually start showing signs of this horse disease 7 to 12 days after exposure. As strangles progresses, it often causes swelling at the throat area, where lymph nodes are situated between the jawbone and throat area. Affected horses may develop a harsh cough or noisy respiration, and a large abscess may form in the lymph nodes and then break open, draining the thick, ugly pus.</p>
+</div>
+<p>Horses can also experience two very serious complications of strangles;</p>
+ <div style="padding:2%"><ul data-blast="color"> 
+   <li><p> One is purpura hemorrhagica, an immune system problem that causes severe inflammation of the blood vessels. Signs include swelling of the legs and hemorrhages on the gums and mucous membranes, and it may occur about three to four weeks after the initial infection.</p></li>
+    <li><p> The other serious complication is “bastard” strangles, where the strep bacteria goes to the lungs, liver, kidneys, brain, or any other lymph node, and causes abscesses in the tissues of these areas. If these abscesses enlarge and rupture, the resulting infection and inflammation can be life-threatening.</p></li>
+</ul></div>
+
+<p><b>Diagnosis and treatment</b></p>
+ <div style="padding:2%">
+<p>If your vet suspects that your horse has a guttural pouch infection, they will use an endoscope to view the guttural pouches, take a culture by doing a swab, and flush the pouches with antibiotics. Treatment is supportive with isolated stall rest. This horse disease will run its course if the infection is mild. Vets disagree about how to treat the disease in its early stages, however. Using antibiotics as soon as the disease is diagnosed can prevent the formation of abscesses, but prevent the horse from building stronger immunity.</p>
+</div>
+
+<p><b>Horse Disease Prevention</b></p>
+ <div style="padding:2%">
+<p>Try to prevent strangles by isolating all new horses who come to your facility for at least two weeks. Before you vaccinate your horse, ask your vet whether he or she recommends doing so based on your horse’s level of exposure. Also, never vaccinate a horse who is already showing signs of the disease, or any horse who has had strangles within the previous 12 months. These horses already have a high antibody concentration, and a vaccine could cause the horse to develop purpura hemorrhagica./p>
+</div>
+</div>
+</div><br><br>
+
+
+         <!--======= ENCEPHALOMYELITIS info
+           ============================-->
+
+ <h4 class="post mt-3">ENCEPHALOMYELITIS</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Viral Encephalomyelitis is a viral disease of the nervous system. Three strains of the same disease can infect horses. Called Western equine encephalomyelitis (WEE), Eastern Equine Encephalomyelitis (EEE), and Venezuelan equine encephalomyelitis (VEE), these illnesses can cause severe neurological symptoms and often death. EEE and WEE are most prevalent in the U.S. The virus lives in hosts like birds and rodents, and all strains of equine encephalomyelitis viruses are spread by blood-sucking insects, specifically the mosquito.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+       
+         
+<p><b>Symptoms</b></p>
+ <div style="padding:2%">
+<p>Symptoms of equine encephalomyelitis viruses can be lethargy, lack of appetite, and persistent fever. If the virus isn’t successfully cleared by the horse’s immune system after the initial infection, this horse disease can cause neurological behaviors such as circling, seizures, stumbling, and lethargy. As this horse disease progresses, the horse may begin head pressing (pressing the head against a wall or other object), become blind, and fall into a coma.</p>
+</div>
+
+
+<p><b>Diagnosis and treatment</b></p>
+<div style="padding:2%">
+<p>The encephalomyelitis viruses may be diagnosed by blood tests, which isolate antibodies to the disease, along with clinical symptoms, or on postmortem testing.</p>
+
+<p>No cure is known for equine viral encephalomyelitis, but veterinarians can provide supportive treatment for affected horses in the form of intravenous fluids, anti-inflammatories, and anti-diarrhea medications.</p>
+</div>
+
+<p><b>Horse Disease Prevention</b></p>
+<div style="padding:2%">
+<p>Vaccinating your horse is the best way to prevent serious infections with this viral horse disease encephalomyelitis. Your veterinarian can recommend a vaccine protocol that is appropriate for your particular area of the country. Eliminating areas where mosquitoes can breed is another way to help control encephalomyelitis.</p>
+<p>Here are a few tips to prevent this horse disease:</p>
+<div style="padding:2%"><ul data-blast="color"> 
+   <li><p> Remove standing water from your property. Mosquitoes lay their eggs in standing water, and the larvae hatch and grow there. Eliminating water where the insects can lay their eggs can help reduce mosquito populations.</p></li>
+    <li><p>If you have a water trough for your horses, stock it with mosquitofish. The fish will eat the mosquito larvae and reduce the number of mosquitoes that may bite your horse. Mosquitofish are often available at no charge from county vector control agencies.</p></li>
+   <li><p> Spray your horse with mosquito repellent during mosquito season, and try to keep her indoors at night (or during the dusk and dawn mosquito feeding times) if at all possible.</p></li>
+</ul></div>
+</div>
+</div>
+</div><br><br>
+
+
+         <!--======EQUINE PROTOZOAL MYELOENCEPHALITIS (EPM) info
+             ================================-->
+
+ <h4 class="post mt-3">EQUINE PROTOZOAL MYELOENCEPHALITIS (EPM)</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Equine Protozoal Myeloencephalitis (EPM). Equine Protozoal Myeloencephalitis, or EPM, is caused by a protozoan, the most common of which is Sarcocystis neurona and is the most commonly diagnosed neurological disease in horses today. Many horses have been exposed to this horse disease EPM, but not all horses develop the disease. Younger and older horses are more commonly affected, and horses who have never been exposed to the disease are more susceptible. The opossum is the host of this disease. Birds can carry this nasty little parasite in their muscles. The opossums eat the birds and pass the organism out through their stool. Horses then get the disease from eating food or water that’s contaminated with the opossum’s feces.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+
+<p><b>Symptoms</b></p>
+ <div style="padding:2%">
+<p>The EPM protozoa affects the spinal cord and brain, resulting in a variety of symptoms, including incoordination of one or both rear limbs, stumbling, muscle atrophy, and other subtle to severe neurological signs, such as bucking under saddle, an inability to execute lead changes, and unequal stride length. Any signs of brain and spinal cord problems can also signal the horse disease EPM, from paralysis to loss of bladder control and urine dribbling. Learning how to recognize these symptoms are vital.</p>
+</div>
+
+<p><b>Diagnosis and treatment</b></p>
+ <div style="padding:2%">
+<p>At this time, the most definitive test for horse disease EPM requires examination of the cerebrospinal fluid (drawn from a spinal tap) in conjunction with clinical signs. Other tests are currently being developed. Only a few approved products are on the market to treat this disease. The success of treatment depends on the individual horse. Some horses recover completely, while others retain some neurological damage for the rest of their lives. Recurrence of the disease is also a possibility.</p>
+</div>
+
+<p><b>Horse Disease Prevention</b></p>
+ <div style="padding:2%">
+<p>To help prevent the horse disease EPM, keep water and feed sources clean and as free from contamination as possible. Keep trash covered in secure containers to avoid attracting opossums to your property. Remember though that any horse kept outdoors anywhere can be exposed.</p>
+</div>
+
+</div>
+</div><br><br>
+
+
+         <!========ANEMIA info
+             =========================>
+<h4 class="post mt-3">ANEMIA</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Horse disease Equine Infectious Anemia (EIA), a disease that affects the blood. It’s caused by a virus that’s spread between horses by biting horseflies. It can also be spread by using needles, dental floats, and other contaminated equipment between horses. Infected pregnant mares can pass the disease on to their babies if they don’t abort them first.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+
+<p><b>Symptoms</b></p>
+ <div style="padding:2%"> 
+<p>Horses with a serious case of EIA have a high fever, are lethargic, and develop anemia. They often develop thrombocytopenia (lack of platelets), which causes hemorrhages (heavy bleeding) to occur on the gums and elsewhere. They may also exhibit stocking up (swelling) of the lower legs and along the bottom of the abdomen. The signs of EIA develop 7 to 30 days after exposure to the virus. Horses can die from EIA or become chronic carriers of the disease. These horses will have an intermittent fever and weight loss. Learn more about cause of anemia here.</p>
+</div>
+
+<p><b>Diagnosis and treatment</b></p>
+ <div style="padding:2%"> 
+<p>The best test for EIA is something called the Coggins test. Because EIA is so serious and must be reported by law to state health authorities, blood for the Coggins test must be drawn by a licensed and accredited veterinarian, and the sample submitted to a state-approved lab.</p>
+
+<p>If a horse tests positive for EIA, he must be euthanized or quarantined for life because this horse disease has no treatment, and the infection is permanent. The infected horse must be kept a minimum of 200 yards from any other equine. The virus lives for only 15 to 30 minutes in the horsefly, so keeping horses this far apart means that the virus usually dies before the infected fly can travel to get another blood meal. After a horse is deemed positive for EIA, most states also require an obvious brand on the animal. Check with your veterinarian to find out your state’s requirements for the frequency of the Coggins test.</p>
+
+<p>A Coggins Test is a simple blood test that certifies that your horse does not have the horse disease Equine Infectious Anemia (EIA). This test is generally required annually by many boarding facilities and horse shows. A current Coggins is also required for travel across state lines.</p>
+
+<p>This test requires a small blood sample from your horse and as well as digital photos displaying all of his markings. The blood samples are processed at a nearby lab and results are emailed when completed.</p>
+
+<p>A health certificate may also be called a CVI (certificate of veterinary inspection). A health certificate is mandatory for crossing state lines, and may also be required for some horse shows and events. Generally, a health certificate is valid for 30 days, although during infectious disease outbreaks (such as vesicular stomatitis), individual states may change their requirements for incoming horses. The health certificate requires a brief examination of your horse by your veterinarian, whose signature certifies that your horse is free of disease and healthy for travel. For interstate travel, the horse’s Coggins information is also included on the health certificate. It is best to always check with your destination event or state in advance, as health certificate requirements can change.</p>
+</div>
+
+<p><b>Horse Disease Prevention</b></p>
+ <div style="padding:2%"> 
+<p>You’d think that with all this testing, EIA would have been eradicated by now. But unfortunately, that’s not the case with this horse disease. To help protect your horse from EIA, follow these guidelines:</p>
+<div style="padding:2%"> <ul data-blast="color">
+   <li><p> Board your horse only at a facility that’s vigilant about requiring proof of negative EIA status for all horses.</p></li>
+    <li><p> Never use any needle syringe more than once and be diligent that Equine professionals clean all instruments before using them on your horse.</p></li>
+    <li><p> Make certain you know the EIA status of any horse you purchase.</p></li>
+</ul></div>
+</div>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible","arrow right");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+     
+    }
+  });
+}
+</script>
+
+              
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html"">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html"class="active" data-blast="color">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,439 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.info{
+padding:8%;
+padding-left:6%;
+}
+img{
+width:40%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+transition: transform .9s;
+}
+
+
+img:hover{
+ transform: scale(1.3);
+ border-radius:50%;
+border:4px solid black;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="fishinfo.html"class="active"data-blast="color" >Pet-Fish</a>
+  <a href="fishbreeds.html">Breeds</a>
+  <a href="fishproducts.html">Products</a>
+  <a href="fishdisease.html">Diseases</a>
+  <a href="fishvaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+
+              
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Fish</h4>
+                        <div class="line" data-blast="bgColor"></div>
+<p>fish, any of approximately 34,000 species of vertebrate animals (phylum Chordata) found in the fresh and salt waters of the world. Living species range from the primitive jawless lampreys and hagfishes through the cartilaginous sharks, skates, and rays to the abundant and diverse bony fishes. Most fish species are cold-blooded; however, one species, the opah (Lampris guttatus), is warm-blooded.
+</p>
+<p>The study of fishes, the science of ichthyology, is of broad importance. Fishes are of interest to humans for many reasons, the most important being their relationship with and dependence on the environment. A more obvious reason for interest in fishes is their role as a moderate but important part of the world’s food supply.</p>
+<p>The term fish is applied to a variety of vertebrates of several evolutionary lines. It describes a life-form rather than a taxonomic group. As members of the phylum Chordata, fish share certain features with other vertebrates. These features are gill slits at some point in the life cycle, a notochord, or skeletal supporting rod, a dorsal hollow nerve cord, and a tail. </p>
+<br><br>          
+                            <figure>
+                                <img src="images/fish1.jpeg">
+                            </figure>
+                    </div>        
+  
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Skeleton </h4>
+                        <div class="line" data-blast="bgColor"></div>
+<p>Fish are vertebrates, which means they have a skeleton that includes a spine and a skull. The main skeleton helps support and protect the soft parts of the fish's body, such as the organs and muscles.</p>
+<p>There are two different skeletal types: the exoskeleton, which is the stable outer shell of an organism, and the endoskeleton, which forms the support structure inside the body. The skeleton of the fish is made of either cartilage (cartilaginous fishes) or bone (bony fishes).</p>
+
+<br><br>
+                         <figure>
+                                <img src="images/fish2.jpeg" alt="">
+                            </figure>
+<br><br>
+<p><span><b>Senses : </b></span>In addition to taste, smell, sight, hearing, and touch, fish have a unique sensory structure, known as a lateral line, which enables them to sense vibrations in the water. The lateral line is referred to as the sixth sense of fish, and is an extension of their sense of hearing.</p>
+<p><span><b>Classification : </b></span>Fishes are typically divided into three groups: superclass Agnatha (jawless fishes), class Chondrichthyes (cartilaginous fishes), and superclass Osteichthyes (bony fishes).</p>
+<p><span><b>Species : </b></span>The total number of living fish species—about 32,000— is greater than the total of all other vertebrate species (amphibians, reptiles, birds, and mammals) combined. </p>
+
+<br><br>                    <figure>
+                                <img src="images/fish3.jpeg" alt="">
+                            </figure>
+                   </div>
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Health </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Fish is a low-fat high quality protein. Fish is filled with omega-3 fatty acids and vitamins such as D and B2 (riboflavin). Fish is rich in calcium and phosphorus and a great source of minerals, such as iron, zinc, iodine, magnesium, and potassium.</P>
+<p>Fish health management is a term used in aquaculture to describe management practices which are designed to prevent fish disease. Once fish get sick it can be difficult to salvage them.
+
+Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation.</p>
+
+ <br><br>                      <figure>
+                                <img src="images/fish4.jpeg" alt="">
+                            </figure>
+                   </div>        
+                    
+                    
+                   <div class="info">
+
+                       <h4 class="post mt-3">Health Benefits </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+                   <pFish are rich in a type of fat known as omega fatty acids. These fats are important for maintaining brain health. Having a low blood level of omega-3 fatty acids has been connected to accelerated brain aging, including symptoms like memory loss and cognitive impairment. In fact, these low levels of omega fatty acids have been linked to brain shrinkage during aging.></p>
+<p>Fish are a great source of protein, which is critical to maintaining healthy muscles, organs, and blood vessels. Protein helps support cell division, hair growth, and even hormone signaling. It’s used by every system of the body in one way or another. 
+
+Fish is also rich in iodine, which is a vital mineral that the body can’t produce on its own. Iodine is important to the function of your thyroid, which controls things like your appetite and your immune system. Fish in general are also a good source of nutrients</p>
+<p>Fish is filled with omega-3 fatty acids and vitamins such as D and B2 (riboflavin). Fish is rich in calcium and phosphorus and a great source of minerals, such as iron, zinc, iodine, magnesium, and potassium. The American Heart Association recommends eating fish at least two times per week as part of a healthy diet.</p>
+<p> Fish is a high-protein, low-fat food that provides a range of health benefits. White-fleshed fish, in particular, is lower in fat than any other source of animal protein, and oily fish are high in omega-3 fatty acids, or the "good" fats.</p>
+<p>Poultry and fish are considered the best animal proteins you can load your diet with, Laster said. Fish is hailed for its omega-3 fatty acids, which can protect against cardiovascular disease. Fish is also rich in vitamin D, selenium and protein.</p>
+                     <br><br>                      <figure>
+                                <img src="images/fish5.jpeg" alt="">
+                            </figure>
+                   </div>        
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Breeds</h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Most species of livebearers kept in home aquariums are generally easy to breed. Identifying sexes is usually easy as well. Males are generally larger and have larger, longer, more ornate, and more colorful fins than females. </p>
+<br><br>                      <figure>
+                                <img src="images/fish6.jpeg" alt="">
+                            </figure>
+                   </div>        
+
+                    <div class="info">
+
+                       <h4 class="post mt-3">Lifespan </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>The fish with the shortest lifespan is known to be the killifish, which only lives about a year, but many fish live upwards of 10 to 15 years, with the average being about 7. </p>
+ <br><br>                      <figure>
+                                <img src="images/fish7.jpeg" alt="">
+                            </figure>
+                   </div>        
+
+                    <div class="info">
+
+                       <h4 class="post mt-3">Fish Communication </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Just like humans, fish can also communicate with one another. The most common ways they achieve this are through sound, color, bioluminescence, motion, electrical impulses and smell. These forms of communication are usually used to help navigate, call for spawning, alert predators to keep away, and while fighting.</p>
+ <br><br>                      <figure>
+                                 <iframe width="50%" height="50%"
+src="https://www.youtube.com/embed/0gT8Ty0ClHc">
+</iframe>
+ <iframe width="50%" height="50%"
+src="https://www.youtube.com/embed/pz3UytMUrfE">
+</iframe>
+
+
+ 
+                            </figure>
+                   </div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html"class="active" data-blast="color">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

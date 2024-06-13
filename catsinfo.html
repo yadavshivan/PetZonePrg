@@ -1,0 +1,462 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.info{
+padding:8%;
+padding-left:6%;
+}
+img{
+width:40%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+transition: transform .9s;
+
+}
+
+img:hover{
+ transform: scale(1.3);
+ border-radius:50%;
+border:4px solid black;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="catsinfo.html" class="active"data-blast="color">Pet-Cats</a>
+  <a href="catbreeds.html">Breeds</a>
+  <a href="#catproducts">Products</a>
+  <a href="catdisease.html">Diseases</a>
+  <a href="catvaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+
+              
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Cats</h4>
+                        <div class="line" data-blast="bgColor"></div>
+                        <p>The cat (Felis catus) is a domestic species of a small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact. Domestic cats are valued by humans for companionship and their ability to kill rodents. About 60 cat breeds are recognized by various cat registries.</p>
+<br><br>           
+                            <figure>
+                                <img src="images/cat.jpg" alt="">
+                            </figure>
+
+                    </div>        
+  
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Skeleton </h4>
+                        <div class="line" data-blast="bgColor"></div>
+<p>Cats have seven cervical vertebrae (as do most mammals); 13 thoracic vertebrae (humans have 12); seven lumbar vertebrae (humans have five); </p>
+<p>three sacral vertebrae (as do most mammals, but humans have five); and a variable number of caudal vertebrae in the tail (humans have only vestigial caudal vertebrae, 
+fused into an internal coccyx).:â€Š11â€Š The extra lumbar and thoracic vertebrae account for the cat's spinal mobility and flexibility. </p>
+<p>Attached to the spine are 13 ribs, the shoulder, and the pelvis.:â€Š16â€Š Unlike human arms, </p>
+<p>cat forelimbs are attached to the shoulder by free-floating clavicle bones which allow them to pass their body through any space into which they can fit their head.</p>
+
+<br><br>
+                         <figure>
+                                <img src="images/skeleton.png" "width='50px'"alt="">
+                            </figure>
+<br><br>
+<h4 class="post mt-3">SSenses </h4>
+<p><span><b>Vision : </b></span>VisionReflection of camera flash from the tapetum lucidum
+Cats have excellent night vision and can see at only one-sixth the light level required for human vision. This is partly the result of cat eyes having a tapetum lucidum, which reflects any light that passes through the retina back into the eye, thereby increasing the eye's sensitivity to dim light</p>
+<p><span><b>Hearing: </b></span>The domestic cat's hearing is most acute in the range of 500 Hz to 32 kHz. It can detect an extremely broad range of frequencies ranging from 55 Hz to 79,000 Hz. It can hear a range of 10.5 octaves, while humans and dogs can hear ranges of about 9 octaves. Its hearing sensitivity is enhanced by its large movable outer ears, the pinnae, which amplify sounds and help detect the location of a noise. It can detect ultrasound, which enables it to detect ultrasonic calls made by rodent prey.[83][84] Recent research has shown that cats have socio-spatial cognitive abilities to create mental maps of owners' locations based on hearing owners' voices
+<p><span><b>Smell: </b></span>Cats have an acute sense of smell, due in part to their well-developed olfactory bulb and a large surface of olfactory mucosa, about 5.8 square centimetres (29â„32 square inch) in area, which is about twice that of humans.Cats and many other animals have a Jacobson's organ in their mouths that is used in the behavioral process of flehmening. It allows them to sense certain aromas in a way that humans cannot. Cats are sensitive to pheromones such as 3-mercapto-3-methylbutan-1-ol,[88] which they use to communicate through urine spraying and marking with scent glands.</p>
+<br><br>                    <figure>
+                                <img src="images/kits.jpg" alt="">
+                            </figure>
+                   </div>
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Health </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+
+<p>Neutering increases life expectancy: one study found castrated male cats live twice as long as intact males,</p> <p>while spayed female cats live 62% longer than intact females.</p><p>35â€Š Having a cat neutered confers health benefits, because castrated males cannot develop testicular cancer, 
+spayed females cannot develop uterine or ovarian cancer, and both have a reduced risk of mammary cancer</p><p>About 250 heritable genetic disorders have been identified in cats, many similar to human inborn errors of metabolism.The high level of similarity among the metabolism of mammals allows many of these feline diseases to be diagnosed using genetic tests that were originally developed for use in humans, as well as the use of cats as animal models in the study of the human diseases</p>
+ <br><br>                      <figure>
+                                <img src="images/health.jpg" alt="">
+                            </figure>
+                   </div>        
+                    
+                    
+                   <div class="info">
+
+                       <h4 class="post mt-3">Health Benefits </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+                   
+
+<p>5 scientifically proven health benefits of having a cat</p>
+<p>So while cats may not be purrrrrfect, they not only provide important companionship but can also have powerful effects on your well-being. In honor of International Cat Day (observed annually on Aug. 8), here are five ways cats can help your health. Meow! </p>
+
+<p><b>1. Petting a cat may lower your stress levels</b></p>
+<p>If youâ€™ve ever spent an afternoon cuddled on the couch stroking Fluffyâ€™s fur or scratching Simbaâ€™s ears, you already know anecdotally the calming effect it can have. But thereâ€™s also hard research to back the stress-reducing benefits of physically interacting with a feline.</p> 
+
+<p>In a 2019 study, a group of researchers from Washington State University gathered 249 students for an animal visitation, but only a small percentage of them were allowed to interact with the cats and dogs, with the other participants split into various groups to either watch from afar, be shown pictures of animals, or wait indefinitely with no animal stimuli whatsoever. The first group that got to pet and play with the animalsâ€”for a mere 10 minutes!â€”showed the greatest reduction in cortisol levels (a.k.a. the stress hormone). </p>
+<br>
+
+<p><b>2. Cats may make you happier</b></P>
+<p>In addition to lowering stress levels, face time with a furry friend may also boost your moodâ€”even if those minutes are through a computer screen. Intrigued by the wave of internet cat videos that kept popping up in her feed, researcher Jessica Myrick, Ph.D. and associate professor at Pennsylvania State University, decided to find out what effect they had on peopleâ€™s emotions.</p> 
+<p>So the next time you need an injection of joy, consider firing up your laptop and watching Keyboard Cat tickle the ivories for a few minutes. </p> 
+<br>
+<p><b>3. Cats may help your heart</b></p>
+<p>Yes, that tabby could be beneficial for your ticker. A 2009 study published in the Journal of Vascular and Interventional Neurology found a link between cat ownership and a reduction in death from myocardial infarction (aka heart attacks), as well as other cardiovascular diseases (including strokes). And if youâ€™re curious, no, the same could not be said for dog owners. Chalk another one up for Whiskers! </p>
+<br>
+<p><b>4. Cats may control your blood pressure better than medicine </b></p>
+<p>Those suffering from hypertension take note. Researchers at the University of Buffalo tracked a group of 48 hypertensive New York stockbrokers who were all prescribed an ACE inhibitor to manage their high blood pressure. Half of the group was also asked to add a dog or cat to their treatment regimen. During a subsequent stress test, the pet ownersâ€™ heart rates and blood pressure levels increased much less than those participants solely taking the ACE inhibitor medication.</p> 
+<br>
+<p><b>5. Cats may help prevent allergies</b></p>
+<p>If you want your baby to grow up with a reduced risk of pet allergies, consider adopting a cat when he or she is an infant. A study published in Clinical & Experimental Allergy in 2011, which tracked participants enrolled in the Detroit Childhood Allergy Study, found that teens who had a cat during their first year of life had a reduced risk of sensitivity to cats later on</p>
+                  <br><br>                      <figure>
+                                <img src="images/vet.png" alt="">
+                            </figure>
+                   </div>        
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Breeds</h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>he following list of cat breeds includes only domestic cat breeds and domestic and wild hybrids. The list includes established breeds recognized by various cat registries, new and experimental breeds, landraces being established as standardized breeds, distinct domestic populations not being actively developed and lapsed (extinct) breeds.</p>
+
+<p>As of 2019, The International Cat Association (TICA) recognizes 73 standardized breeds, the Cat Fanciers' Association (CFA) recognizes 45, and the FÃ©dÃ©ration Internationale FÃ©line (FIFe) recognizes</p>
+
+<p>Inconsistency in breed classification and naming among registries means that an individual animal may be considered different breeds by different registries (though not necessarily eligible for registry in them all, depending on its exact ancestry). For example, TICA's Himalayan is considered a colorpoint variety of the Persian by the CFA, while the Javanese (or Colorpoint Longhair) is a color variation of the Balinese in both the TICA and the CFA; both breeds are merged (along with the Colorpoint Shorthair) into a single "mega-breed", the Colourpoint, by the World Cat Federation (WCF), who have repurposed the name "Javanese" for the Oriental Longhair. Also, "Colo[u]rpoint Longhair" refers to different breeds in other registries. There are many examples of nomenclatural overlap and differences of this sort. Furthermore, many geographical and cultural names for cat breeds are fanciful selections made by Western breeders to be exotic sounding and bear no relationship to the actual origin of the breeds; the Balinese, Javanese, and Himalayan are all examples of this trend.</p>
+
+<p>The domestic short-haired and domestic long-haired cat types are not breeds, but terms used (with various spellings) in the cat fancy to describe "mongrel" cats by coat length, ones that do not belong to a particular breed. Some registries permit them to be pedigreed and they have been used as foundation stock in the establishment of some breeds.[citation needed] They should not be confused with standardized breeds with similar names, such as the British Shorthair and Oriental Longhair.</p>
+
+<br><br>                      <figure>
+                                <img src="images/breed.webp" alt="">
+                            </figure>
+                   </div>        
+
+                    <div class="info">
+
+                       <h4 class="post mt-3">Lifespan </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>The average lifespan of pet cats has risen in recent decades. In the early 1980s, it was about seven years,:â€Š33â€Š rising to 9.4 years in 1995:â€Š33â€Š and about 15 years in 2021. Some cats have been reported as surviving into their 30s, with the oldest known cat, Creme Puff, dying at a verified age of 38
+ <br><br>                      <figure>
+                                <img src="images/lifespan.jpg" alt="">
+                            </figure>
+                   </div>        
+
+                    <div class="info">
+
+                      <h4 class="post mt-3">Cat Communication </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Cat communication is the exchange of information between cats, and between cats and humans, that has an effect on their current or future behavior. They need to communicate with each other for bonding, and relating with each other; they need to collaborate, play, and share resources. When they communicate with people, they do so to get what they need or want, such as food, affection, or play.</p>
+ <br><br>                      <figure>
+                                 <iframe width="80%" height="80%"
+src="https://www.youtube.com/embed/fOd16PT1S7A">
+</iframe> 
+                            </figure>
+    <figure><br><br>
+                                 <iframe width="80%" height="80%"
+src="https://www.youtube.com/embed/jHWKtQHXVJg">
+</iframe> 
+                            </figure>
+                   </div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html"class="active" data-blast="color">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

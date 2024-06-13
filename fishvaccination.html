@@ -1,0 +1,404 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.upper-space{
+padding:8% 30% 0% 30%;
+text-align:center;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="fishinfo.html">Pet-Fish</a>
+  <a href="fishbreeds.html">Breeds</a>
+  <a href="fishproducts.html">Products</a>
+  <a href="fishdisease.html" >Diseases</a>
+  <a href="fishvaccination.html"class="active"data-blast="color">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+
+         
+
+
+
+
+<div class="main-content">
+<div class="upper-space">
+ <h2 class="post mt-3"data-blast="bgColor"style="padding:10px">Fish Vaccinations </h2>
+</div>
+<div style="padding:5%">
+           
+<p>  Understanding Fish Vaccination - By Cedric Komar, William.J. Enright, Luc Grisez, and Zilong Tan and published by Intervet - Although fish farming has great development potential in Asia, fish diseases still remain a major constraint to its successful expansion. </p>
+
+<p>The culture environment, be it in tanks, cages or ponds, seawater or freshwater, can stress the fish due to high stocking densities, reduced oxygen levels, sub-optimal water quality and high pathogen loads. Therefore, farmed fish, similar to farmed animals, have an increased susceptibility to infectious diseases. Such diseases may be bacterial, viral, fungal or parasitic in origin.
+ </p>
+<p>Prophylactic treatments and good management practices can usually prevent or reduce the susceptibility to diseases. Although, antibiotics can overcome bacterial diseases, consumer health and food safety issues prevent their use in aquaculture. Moreover, established viral diseases cannot be treated.</p>
+<center><img src="images/fishes/image 1.JFIF" height="350" width="300"></center><br>
+
+<p>Therefore, vaccination is the best alternative to combat bacterial and viral diseases. It has been a key tool in the success of the livestock, pig, poultry and salmon industries in the fight against infectious diseases. In salmon farming, the use of vaccines is now so routine that all fish stocked in sea cages are vaccinated. It has been proven to be cost effective. It is also the key reason for the success of that industry. </p>
+
+<p> However, in Asia, fish vaccination is still a new concept that is not very well known and understood among farmers and professionals working in the area.</p>
+
+<h4 class="post mt-3">Fish Vaccinations </h4>
+
+ <div class="line" data-blast="bgColor"></div>
+ <div style="padding:5%">
+<h5><p data-blast="color"> What are vaccines?</p></h5>
+<img src"images/fishes/Aquatic feed.JPG" height"200" width"250">
+
+<p> Vaccines are various preparations of antigens derived from specific pathogenic organisms that are rendered non-pathogenic. They stimulate the immune system and increase the resistance to disease from subsequent infection by the specific pathogen. Vaccination can be compared with an insurance policy where it is worth paying a basic fee for a policy that would later cover the costs of a more expensive disease or accident that may occur. Similarly, vaccination is a preventive measure that protects fish against a future disease and the associated costs due to morbidity, mortality and therapeutic treatment.
+</p>
+<p> However, just as an insurance policy will cover the costs of an accident only if this fits the clauses of the insurance contract, a vaccine only protects against specific diseases. For example, a vaccine against Streptococcus iniae infection will protect the vaccinated fish against Streptococcus iniae but it will not protect the fish against Vibrio anguillarum.
+</p>
+<p> A vaccine can be either water or oil based. Typically, injection vaccines are oil based as the oil provides adjuvant qualities. This means that the oil increases the effectiveness of the vaccine as well as the duration of the desired protection. The choice of vaccine depends on the particular case. It will depend on whether protection can be obtained, the duration of the protection possible versus the required duration, the final cost of the vaccine in relation to the benefit to the farmer and the registration limitations imposed by authorities in the countries where the vaccine is marketed.</p>
+<p> There are three major modes for the application of vaccines: oral, immersion and injection. However in all cases, only healthy fish should be vaccinated as it is a preventive measure and not a cure.</p>
+<br><br>
+
+<h5><p data-blast="color"> Oral Vaccination</p></h5>
+
+<p> With oral vaccination, the vaccine is either mixed with the feed, coated on top of the feed (topdressed) or bio-encapsulated. When antigens are to be incorporated in feed, the heat sensitivity of the antigen has to be considered. When vaccines are used as top dressing in feed, a coating agent is usually applied, either to prevent leaching of the antigen from the pellets or to prevent breakdown of the antigen in the acidic environment of the fish stomach. For sensitive antigens, various microencapsulation methods are being evaluated and tested.</p>
+
+<p> Bio-encapsulation is used where fish fry are to be vaccinated. In this case, live feed, such as Artemia nauplii, copepods or rotifers, are incubated in a vaccine suspension after which they are fed to the fry. Since these live organisms are non-selective filter feeders, they will accumulate the antigen in their digestive tract and as such, transform themselves into living microcapsules.
+</p>
+
+<p> Oral vaccination has the advantage that it is a very easy vaccine administration method with no stress to the fish. However, oral vaccines have a very short term stability once mixed with the feed. In most cases, only limited protection can be obtained and the duration of protection can be rather short. Moreover, although oral vaccination is the preferred method from a fish farmers perspective, at present there are few, if any, effective oral vaccines in the market.</p>
+
+<br><br>
+<h5><p data-blast="color"> Immersion  Vaccination</p></h5>
+
+
+
+<p> Skin epithelium and gills have mechanisms to protect fish in a broad as well as specific way. Immersion vaccination works on the ability of mucosal surfaces to recognize pathogens they had been in contact with. When fish are immersed in water containing the diluted vaccine, the suspended antigens from the vaccine may be adsorbed by the skin and gills. Then, specialised cells, such as antibody-secreting cells, present in the skin and gill epithelium will be activated and will protect the fish when fish are exposed to the live pathogen at a later stage. Other cells located in the epithelium of skin and gills, such as antigen presenting cells (macrophages), also absorb vaccine antigens and transport them to specialised tissues where the systemic immune response builds up.
+</p>
+<center><img src="images/fishes/immersion img.JPG" height="200" width="250"></center><br>
+
+<p> In immersion vaccination, there are two application methods: dip and bath. In dip vaccination, fish are immersed for a very short duration, usually 30 seconds, in a highly concentrated vaccine solution, usually 1 part vaccine product to 9 parts water. With bath vaccination, fish are exposed for a longer period, usually one to several hours, in a lower concentration of vaccine.</p>
+<br><br>
+
+
+<h5><p data-blast="color">  Dip Vaccination</p></h5>
+
+<p> Of the two alternatives, dip vaccination is more widely used since it facilitates fast vaccination of large numbers of fish (up to 100kg of fish per litre of vaccine). Immersion vaccination is widely used for vaccination of fry from 1 to 5 g. It is an effective method that results in relatively good protection. The limitations of immersion vaccination are that the duration of immunity is not very long and a booster vaccination is required when the disease prevails over longer periods. Also, the method is impractical for larger size fish due to cost-effectiveness and the stress that could be induced by vaccination.
+</p><center><img src="images/fishes/dip img.JPG" height="200" width="250"></center><br>
+
+<p> It has to be noted that, in fish smaller than 1g, the immune system might still be immature and, therefore, the vaccine efficacy may be reduced. A few bacterial combination vaccines exist for immersion application but, to our knowledge, no inactivated viral vaccine is presently available for immersion application.</p>
+<br><br>
+<h5><p data-blast="color">  Injaction Vaccination</p></h5>
+
+<p> Initially, fish farmers may not favour injection vaccination as they fear that the stress resulting from the handling and injection of the fish will cause high mortality. In contrast, many studies and farmers experience in the salmon industry have shown that there is no mortality associated with the vaccination process per se, although some weak fish may die due to the handling process.</p>
+<p> Light anaesthesia of fish is needed for injection vaccination. This decreases the stress due to vaccination, prevents mechanical injuries and helps the fish to recover faster from the handling. When injection vaccination is performed properly, mortality immediately after vaccination should not exceed 0.25%. Higher mortalities indicate incorrect use of anaesthetic, excessive handling/stress of the fish, incorrect needle insertion (e.g., rupturing the spleen), vaccination of diseased or weakened fish, lack of oxygen in the anaesthesia vessel, etc.</p>
+<p> Injection vaccines can be administered by intramuscular or intraperitoneal (in the abdominal cavity) injection, but the latter is by far the most common. As intraperitoneal injection vaccination involves depositing the vaccine in the abdominal cavity, it is important that the needle should penetrate the targeted abdominal wall of fish by 1 to 2 mm. Short needles might deposit the vaccine in the musculature and cause inflammation and a bad immune response.
+</p>
+<p> The right thickness of needle is also important. If the vaccine is viscous, it might pass through the needle with difficulty. In contrast, a needle that is too large can induce sores and secondary infections at the injection site, and allow the vaccine to flow back. The rapidity of the immune response is temperature dependant. It usually takes several weeks before good immune protection is developed as a result of vaccination. Therefore, it is important not to stress the fish in the weeks following vaccination as stress is known to suppress the immune system.
+</p>
+<p> Injection vaccination has a number of major advantages that makes it a preferred vaccination method. Injection vaccination provides for a long duration of protection, i.e., for over a year, and it allows for multiple antigens to be combined in a single vaccine and, therefore, in a single administration. In addition, the fish farmer is assured that every fish in the population has received the vaccine and at the correct dose. At present, the most complex products provide protection against 6 antigens (5 bacterial and 1 viral) and, in the near future, heptavalent vaccines will become available. The injection volumes per fish are usually 0.1 or 0.2 ml and give protection throughout the production cycle of most farmed species. Injections are in general superior to any other vaccine application method; however, from a practical point of view, they can only be applied to fish of 10g or more.
+
+</p>
+
+
+<br><br>
+<h5><p data-blast="color"> Different types of vaccines exist:</p></h5>
+<div style="padding:3%"><ul data-blast="color">
+   <li><p> Inactivated vaccines are the most common in aquaculture. They are produced by inactivating the disease-causing micro-organism with chemicals or heat.
+</p></li>
+    <li><p> Live, attenuated vaccines. To make a live, attenuated vaccine, the disease-causing microorganism is grown under special laboratory conditions that cause it to lose its virulence or disease-causing properties. Intervets Aquavac ESC, a vaccine used against Edwardsiella ictaluri in Channel catfish (Ictalurus punctatus) in the USA is an example.
+</p></li>
+    <li><p> Subunit vaccines are a more modern type of vaccine, developed from antigenic fragments that are able to evoke an immune response. Subunit vaccines can be made by purification of parts of the actual micro-organism or they can be made in the laboratory using genetic engineering techniques. An example is Intervets Compact IPN used against infectious pancreatic necrosis virus infections of salmon in Chile.
+</p></li>
+    <li><p>Recombinant vector vaccines. A vaccine vector or carrier is a weakened bacterium into which harmless parts of genetic material from another disease-causing micro-organism have been inserted.
+ </p></li>
+    <li><p> DNA vaccines are developed using plasmids containing information on the expression (of part) of the antigen of interest.
+</p></li>
+    <li><p>Synthetic/peptide vaccines are synthetically prepared antigenic epitopes in a suitable carrier or adjuvant.
+ </p></li>
+    <li><p> Anti-idiotypic vaccines contain antibodies developed so as to mimic an antigen.
+</p></li>
+</ul></div>
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html"class="active" data-blast="color">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

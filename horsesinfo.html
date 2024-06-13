@@ -1,0 +1,482 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.info{
+padding:8%;
+padding-left:6%;
+}
+img{
+width:40%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+transition: transform .9s;
+}
+
+
+img:hover{
+ transform: scale(1.3);
+ border-radius:50%;
+border:4px solid black;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="horsesinfo.html" class="active"data-blast="color">Pet-Horses</a>
+  <a href="horsebreeds.html">Breeds</a>
+  <a href="horseproducts.html">Products</a>
+  <a href="horsedisease.html">Diseases</a>
+  <a href="horsevaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+
+              
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Horses </h4>
+                        <div class="line" data-blast="bgColor"></div>
+<p>horse (Equus ferus caballus) is a domesticated, odd-toed, hoofed mammal. It belongs to the taxonomic family Equidae and is one of two extant subspecies of Equus ferus. The horse has evolved over the past 45 to 55 million years from a small multi-toed creature, Eohippus, into the large, single-toed animal of today. Humans began domesticating horses around 4000 BC, and their domestication is believed to have been widespread by 3000 BC. Horses in the subspecies caballus are domesticated, although some domesticated populations live in the wild as feral horses. These feral populations are not true wild horses, as this term is used to describe horses that have never been domesticated. There is an extensive, specialized vocabulary used to describe equine-related concepts, covering everything from anatomy to life stages, size, colors, markings, breeds, locomotion, and behavior.</p>
+
+<p>Horses are adapted to run, allowing them to quickly escape predators, possessing an excellent sense of balance and a strong fight-or-flight response. Related to this need to flee from predators in the wild is an unusual trait: horses are able to sleep both standing up and lying down, with younger horses tending to sleep significantly more than adults. Female horses, called mares, carry their young for approximately 11 months, and a young horse, called a foal, can stand and run shortly following birth. Most domesticated horses begin training under a saddle or in a harness between the ages of two and four. They reach full adult development by age five, and have an average lifespan of between 25 and 30 years.</p>
+
+<p>Horse breeds are loosely divided into three categories based on general temperament: spirited "hot bloods" with speed and endurance; "cold bloods", such as draft horses and some ponies, suitable for slow, heavy work; and "warmbloods", developed from crosses between hot bloods and cold bloods, often focusing on creating breeds for specific riding purposes, particularly in Europe. There are more than 300 breeds of horse in the world today, developed for many different uses.</p>
+
+<p>Horses and humans interact in a wide variety of sport competitions and non-competitive recreational pursuits, as well as in working activities such as police work, agriculture, entertainment, and therapy. Horses were historically used in warfare, from which a wide variety of riding and driving techniques developed, using many different styles of equipment and methods of control. Many products are derived from horses, including meat, milk, hide, hair, bone, and pharmaceuticals extracted from the urine of pregnant mares. Humans provide domesticated horses with food, water, and shelter, as well as attention from specialists such as veterinarians and farriers. </p>
+                        <br><br>           
+                            <figure>
+                                <img src="images/h.jpg" alt="">
+                            </figure>
+
+                    </div>        
+  
+                    <div class="info">
+                    
+                        <h4 class="post mt-3">Skeleton </h4>
+                        <div class="line" data-blast="bgColor"></div>
+<p>The horse skeleton averages 205 bones. A significant difference between the horse skeleton and that of a human is the lack of a collarbone—the horse's forelimbs are attached to the spinal column by a powerful set of muscles, tendons, and ligaments that attach the shoulder blade to the torso. The horse's four legs and hooves are also unique structures. Their leg bones are proportioned differently from those of a human. For example, the body part that is called a horse's "knee" is actually made up of the carpal bones that correspond to the human wrist. Similarly, the hock contains bones equivalent to those in the human ankle and heel. The lower leg bones of a horse correspond to the bones of the human hand or foot, and the fetlock (incorrectly called the "ankle") is actually the proximal sesamoid bones between the cannon bones (a single equivalent to the human metacarpal or metatarsal bones) and the proximal phalanges, located where one finds the "knuckles" of a human. A horse also has no muscles in its legs below the knees and hocks, only skin, hair, bone, tendons, ligaments, cartilage, and the assorted specialized tissues that make up the hoof.</p><br><br>
+                         <figure>
+                                <img src="images/h1.png" alt="">
+                            </figure>
+<br><br>
+<p><span><b>Senses: </b></span>The horses' senses are based on their status as prey animals, where they must be aware of their surroundings at all times.They have the largest eyes of any land mammal, and are lateral-eyed, meaning that their eyes are positioned on the sides of their heads.This means that horses have a range of vision of more than 350°, with approximately 65° of this being binocular vision and the remaining 285° monocular vision.Horses have excellent day and night vision, but they have two-color, or dichromatic vision; their color vision is somewhat like red-green color blindness in humans, where certain colors, especially red and related colors, appear as a shade of green</p>
+<p>Their sense of smell, while much better than that of humans, is not quite as good as that of a dog. It is believed to play a key role in the social interactions of horses as well as detecting other key scents in the environment. Horses have two olfactory centers. The first system is in the nostrils and nasal cavity, which analyze a wide range of odors. The second, located under the nasal cavity, are the Vomeronasal organs, also called Jacobson's organs. These have a separate nerve pathway to the brain and appear to primarily analyze pheromones.</p>
+<p>A horse's hearing is good, and the pinna of each ear can rotate up to 180°, giving the potential for 360° hearing without having to move the head.Noise impacts the behavior of horses and certain kinds of noise may contribute to stress: A 2013 study in the UK indicated that stabled horses were calmest in a quiet setting, or if listening to country or classical music, but displayed signs of nervousness when listening to jazz or rock music. This study also recommended keeping music under a volume of 21 decibels.An Australian study found that stabled racehorses listening to talk radio had a higher rate of gastric ulcers than horses listening to music, and racehorses stabled where a radio was played had a higher overall rate of ulceration than horses stabled where there was no radio playing.[</p>
+<p>Horses have a great sense of balance, due partly to their ability to feel their footing and partly to highly developed proprioception—the unconscious sense of where the body and limbs are at all times. A horse's sense of touch is well-developed. The most sensitive areas are around the eyes, ears, and nose. Horses are able to sense contact as subtle as an insect landing anywhere on the body.</p>
+<p>Horses have an advanced sense of taste, which allows them to sort through fodder and choose what they would most like to eat,and their prehensile lips can easily sort even small grains. Horses generally will not eat poisonous plants, however, there are exceptions; horses will occasionally eat toxic amounts of poisonous plants even when there is adequate healthy food.</p>
+
+<p><span><b>teeth : </b></span>Horses are adapted to grazing. In an adult horse, there are 12 incisors at the front of the mouth, adapted to biting off the grass or other vegetation. There are 24 teeth adapted for chewing, the premolars and molars, at the back of the mouth. Stallions and geldings have four additional teeth just behind the incisors, a type of canine teeth called "tushes". Some horses, both male and female, will also develop one to four very small vestigial teeth in front of the molars, known as "wolf" teeth, which are generally removed because they can interfere with the bit. There is an empty interdental space between the incisors and the molars where the bit rests directly on the gums, or "bars" of the horse's mouth when the horse is bridled.</p>
+
+<p>An estimate of a horse's age can be made from looking at its teeth. The teeth continue to erupt throughout life and are worn down by grazing. Therefore, the incisors show changes as the horse ages; they develop a distinct wear pattern, changes in tooth shape, and changes in the angle at which the chewing surfaces meet. This allows a very rough estimate of a horse's age, although diet and veterinary care can also affect the rate of tooth wear.</p>
+
+<p><span><b>Hooves: </b></span>The critical importance of the feet and legs is summed up by the traditional adage, "no foot, no horse".The horse hoof begins with the distal phalanges, the equivalent of the human fingertip or tip of the toe, surrounded by cartilage and other specialized, blood-rich soft tissues such as the laminae. The exterior hoof wall and horn of the sole is made of keratin, the same material as a human fingernail.The end result is that a horse, weighing on average 500 kilograms (1,100 lb), travels on the same bones as would a human on tiptoe.For the protection of the hoof under certain conditions, some horses have horseshoes placed on their feet by a professional farrier. The hoof continually grows, and in most domesticated horses needs to be trimmed (and horseshoes reset, if used) every five to eight weeks,though the hooves of horses in the wild wear down and regrow at a rate suitable for their terrain. </p>
+<p><span><b>Digestion : </b></span>Horses are herbivores with a digestive system adapted to a forage diet of grasses and other plant material, consumed steadily throughout the day. Therefore, compared to humans, they have a relatively small stomach but very long intestines to facilitate a steady flow of nutrients. A 450-kilogram (990 lb) horse will eat 7 to 11 kilograms (15 to 24 lb) of food per day and, under normal use, drink 38 to 45 litres (8.4 to 9.9 imp gal; 10 to 12 US gal) of water. Horses are not ruminants, they have only one stomach, like humans, but unlike humans, they can utilize cellulose, a major component of grass. Horses are hindgut fermenters. Cellulose fermentation by symbiotic bacteria occurs in the cecum, or "water gut", which food goes through before reaching the large intestine. Horses cannot vomit, so digestion problems can quickly cause colic, a leading cause of death.Horses do not have a gallbladder; however, they seem to tolerate high amounts of fat in their diet despite lack of a gallbladder.</p><br><br>                    <figure>
+                                <img src="images/h2.jpg" alt="">
+                            </figure>
+                   </div>
+
+
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Health & Care </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Horses are grazing animals, and their major source of nutrients is good-quality forage from hay or pasture. They can consume approximately 2% to 2.5% of their body weight in dry feed each day. Therefore, a 450-kilogram (990 lb) adult horse could eat up to 11 kilograms (24 lb) of food.Sometimes, concentrated feed such as grain is fed in addition to pasture or hay, especially when the animal is very active.When grain is fed, equine nutritionists recommend that 50% or more of the animal's diet by weight should still be forage.</p>
+
+<p>Horses require a plentiful supply of clean water, a minimum of 10 US gallons (38 L) to 12 US gallons (45 L) per day. Although horses are adapted to live outside, they require shelter from the wind and precipitation, which can range from a simple shed or shelter to an elaborate stable.</p>
+
+<p>Horses require routine hoof care from a farrier, as well as vaccinations to protect against various diseases, and dental examinations from a veterinarian or a specialized equine dentist. If horses are kept inside in a barn, they require regular daily exercise for their physical health and mental well-being. When turned outside, they require well-maintained, sturdy fences to be safely contained. Regular grooming is also helpful to help the horse maintain good health of the hair coat and underlying skin.</p>
+ <br><br>                      <figure>
+                                <img src="images/h3.jpg" alt="">
+                            </figure>
+                   </div>        
+                    
+                    
+                   <div class="info">
+
+                       <h4 class="post mt-3">Breeds </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+              <p> The concept of purebred bloodstock and a controlled, written breed registry has come to be particularly significant and important in modern times. Sometimes purebred horses are incorrectly or inaccurately called "thoroughbreds". Thoroughbred is a specific breed of horse, while a "purebred" is a horse (or any other animal) with a defined pedigree recognized by a breed registry. Horse breeds are groups of horses with distinctive characteristics that are transmitted consistently to their offspring, such as conformation, color, performance ability, or disposition. These inherited traits result from a combination of natural crosses and artificial selection methods. Horses have been selectively bred since their domestication. An early example of people who practiced selective horse breeding were the Bedouin, who had a reputation for careful practices, keeping extensive pedigrees of their Arabian horses and placing great value upon pure bloodlines. These pedigrees were originally transmitted via an oral tradition.</p><p>In the 14th century, Carthusian monks of southern Spain kept meticulous pedigrees of bloodstock lineages still found today in the Andalusian horse.</p>
+
+<p>Breeds developed due to a need for "form to function", the necessity to develop certain characteristics in order to perform a particular type of work.Thus, a powerful but refined breed such as the Andalusian developed as riding horses with an aptitude for dressage. Heavy draft horses were developed out of a need to perform demanding farm work and pull heavy wagons. Other horse breeds had been developed specifically for light agricultural work, carriage and road work, various sport disciplines, or simply as pets.Some breeds developed through centuries of crossing other breeds, while others descended from a single foundation sire, or other limited or restricted foundation bloodstock. One of the earliest formal registries was General Stud Book for Thoroughbreds, which began in 1791 and traced back to the foundation bloodstock for the breed.There are more than 300 horse breeds in the world today.</p>
+                     <br><br>                      <figure>
+                                <img src="images/h4.jpg" alt="">
+                            </figure>
+                   </div>        
+
+                   <div class="info">
+
+                       <h4 class="post mt-3">Sleeping Pattern </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Horses are able to sleep both standing up and lying down. In an adaptation from life in the wild, horses are able to enter light sleep by using a "stay apparatus" in their legs, allowing them to doze without collapsing. Horses sleep better when in groups because some animals will sleep while others stand guard to watch for predators. A horse kept alone will not sleep well because its instincts are to keep a constant eye out for danger.</p>
+
+<p>Unlike humans, horses do not sleep in a solid, unbroken period of time, but take many short periods of rest. Horses spend four to fifteen hours a day in standing rest, and from a few minutes to several hours lying down. Total sleep time in a 24-hour period may range from several minutes to a couple of hours, mostly in short intervals of about 15 minutes each. The average sleep time of a domestic horse is said to be 2.9 hours per day.</p>
+
+<p>Horses must lie down to reach REM sleep. They only have to lie down for an hour or two every few days to meet their minimum REM sleep requirements. However, if a horse is never allowed to lie down, after several days it will become sleep-deprived, and in rare cases may suddenly collapse as it involuntarily slips into REM sleep while still standing. This condition differs from narcolepsy, although horses may also suffer from that disorder</p>
+<br><br>                      <figure>
+                                <img src="images/h5.jpg" alt="">
+                            </figure>
+                   </div>        
+
+                    <div class="info">
+
+                       <h4 class="post mt-3">Lifespan and life stages</h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p>Depending on breed, management and environment, the modern domestic horse has a life expectancy of 25 to 30 years.uncommonly, a few animals live into their 40s and, occasionally, beyond. The oldest verifiable record was "Old Billy", a 19th-century horse that lived to the age of 62. In modern times, Sugar Puff, who had been listed in Guinness World Records as the world's oldest living pony, died in 2007 at age 56.</p>
+
+<p>Regardless of a horse or pony's actual birth date, for most competition purposes a year is added to its age each January 1 of each year in the Northern Hemisphere and each August 1 in the Southern Hemisphere. The exception is in endurance riding, where the minimum age to compete is based on the animal's actual calendar age.</p>
+
+<p>The following terminology is used to describe horses of various ages:</p>
+
+<p><span><b>Foal : </b></span></p>
+  <p>  A horse of either sex less than one year old. A nursing foal is sometimes called a suckling, and a foal that has been weaned is called a weanling. Most domesticated foals are weaned at five to seven months of age, although foals can be weaned at four months with no adverse physical effects.</p>
+
+<p><span><b>Yearling : </b></span></p>
+    <p>A horse of either sex that is between one and two years old.</p>
+
+<p><span><b>Colt : </b></span></p>
+   <p> A male horse under the age of four. A common terminology error is to call any young horse a "colt", when the term actually only refers to young male horses.</p>
+
+<p><span><b>Filly : </b></span></p>
+   <p> A female horse under the age of four.</p>
+
+<p><span><b>Mare : </b></span></p>
+   <p> A female horse four years old and older.</p>
+
+<p><span><b>Stallion : </b></span></p>
+   <p> A non-castrated male horse four years old and older.[19] The term "horse" is sometimes used colloquially to refer specifically to a stallion.</p>
+
+<p><span><b>Gelding : </b></span></p>
+  <p>  A castrated male horse of any age.</p>
+
+<p>In horse racing, these definitions may differ: For example, in the British Isles, Thoroughbred horse racing defines colts and fillies as less than five years old.[21] However, Australian Thoroughbred racing defines colts and fillies as less than four years old </p>
+<br><br>                      <figure>
+                                <img src="images/h6.jpg" alt="">
+                            </figure>
+                   </div>        
+
+
+                    <div class="info">
+
+                       <h4 class="post mt-3">Horses Communication </h4>
+                       <div class="line" data-blast="bgcolor"></div>
+<p> Horses communicate through a combination of vocal cues and body language. However, when looking at horse-human communication, body language is the method that is most relied upon. Body language cues include movements of the ears, eyes, tail, and general demeanor of the horse.</p>
+
+<p>Whether you are new to the world of horses or simply trying to understand your horse better, taking a look at common body language cues will provide you with a greater insight into your horse.</p>
+
+<p>In this article, we will discuss some of the basic methods that horses use to communicate with both humans and other horses. We will also discuss some of the messages your horse is trying to send through their body language. </p>
+ <br><br>                      <figure>
+                                 <iframe width="80%" height="80%"
+src="https://www.youtube.com/embed/v1yt-DH4ir0">
+</iframe> 
+                            </figure>
+    <figure><br><br>
+                                 <iframe width="80%" height="80%"
+src="https://www.youtube.com/embed/V_Ib9HLMpPM">
+</iframe> 
+
+
+ 
+                            </figure>
+                   </div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html"">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html"class="active" data-blast="color">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

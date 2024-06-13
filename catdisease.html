@@ -1,0 +1,607 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+ 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.upper-space{
+padding:8% 30% 0% 30%;
+text-align:center;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.right:hover{
+transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+.collapsible {
+  cursor: pointer;
+  width: 100%; 
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+}
+
+ .collapsible:hover {
+   border:dotted;
+   border-width:1px;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+             <!--========navbar
+                     =============-->
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="catsinfo.html" >Pet-Cats</a>
+  <a href="catbreeds.html">Breeds</a>
+  <a href="catproducts">Products</a>
+  <a href="catdisease.html"class="active"data-blast="color">Diseases</a>
+  <a href="catvaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+
+                        
+
+      
+
+<div class="main-content">
+<div class="upper-space">
+ <h2 class="post mt-3"data-blast="bgColor"style="padding:10px">Cats Diseases </h2>
+</div><br><br>
+<div class="dimg1">
+<img src="images/cate.jpg"width=100%>
+</div>
+<div style="padding:5%">
+<p>About 250 heritable genetic disorders have been identified in cats, many similar to human inborn errors of metabolism. The high level of similarity among the metabolism of mammals allows many of these feline diseases to be diagnosed using genetic tests that were originally developed for use in humans, as well as the use of cats as animal models in the study of the human diseases.</p>
+<br><br>
+
+
+<!=========Scratch  info
+=======================================================-->
+
+ <h4 class="post mt-3">Cat scratch disease (CSD) </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Cat scratch disease (CSD) is an infection caused by the bacteria Bartonella henselae, and less commonly other Bartonella species.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+   <div style="padding:2%"><p> How it spreads: Cats become infected through flea bites, fights with other infected cats, or blood transfusions. People can be exposed to the bacteria through the scratch or lick of an infected cat.</p>
+       <p>Who is at risk: :</p>
+           
+               <p><b>Type II</b> Young cats (less than 1 year of age), strays or cats living in shelters, cats with current or previous flea infestation, and cats that hunt are most likely to have the bacteria. Any person can get sick from CSD, but illness is most common in children and adolescents under 15 years of age and people with weakened immune systems..</p>
+        
+        <p>The most common form of the disease in dogs is Type I, insulin-dependent diabetes, which occurs when the pancreas is incapable of producing or secreting adequate levels of insulin. Dogs who have Type I diabetes require insulin therapy to survive.</p>
+        <p><b>Signs in pets cats: </b></p>
+       <div style="padding:2%"><ul><p> About one third to half of cats have been exposed to the bacteria at some point in their lifetime. Although most infected cats do not appear sick, some cats may experience mild illness with fever that lasts for approximately 2-3 days. Rarely, the disease can cause more serious signs in cats, including vomiting, red eyes, swollen lymph nodes, tiredness, and/or low appetite. Bartonella infection in dogs is less common, but more likely to cause illness, compared to cats.</p>
+              </div>
+        
+         <p><b>prevention of cats</b></p>
+        
+        <div style="padding:2%"> <ul data-blast="color"><p><b>Cats can get infected with B. henselae from flea bites and flea dirt (droppings) getting into their wounds. By scratching and biting at the fleas, cats pick up the infected flea dirt under their nails and between their teeth. Cats can also become infected by fighting with other cats that are infected</b></p>
+             <li><p>Keep your catÃ¢â‚¬â„¢s nails trimmed.</p></li>
+             <li><p>Apply a flea product (topical or oral medication) approved by your veterinarian once a month.</p></li>
+             <li><p>BEWARE: Over-the-counter flea products may not be safe for cats. Check with your veterinarian before applying ANY flea product to make sure it is safe for your cat and your family.</p></li>
+         </ul></div>
+         <p><b>Control fleas</b></p>
+         <p>Check for fleas by using a flea comb on your cat to inspect for flea dirt</p>.<p>Control fleas cats scratching at fleas<br> Cats scratching at fleas<br>
+Keep your catÃ¢â‚¬â„¢s nails trimmed.<br>
+Apply a flea product (topical or oral medication) approved by your veterinarian once a month.<br>
+BEWARE: Over-the-counter flea products may not be safe for cats. Check with your veterinarian before applying ANY flea product to make sure it is safe for your cat and your family.</p>
+<p>Check for fleas by using a flea comb on your cat to inspect for flea dirt.<br>
+Control fleas in your home by
+Vacuuming frequently<br></p>
+<p>Contacting a pest-control agent if necessa.<br></p>
+       
+            
+</div>
+ 
+</div><br><br>
+
+
+     <!--=======Teeth disease
+           ===========================================-->
+
+ <h4 class="post mt-3">Teeth disease
+          </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>There may also be a possibility of your cat developing sore gums, bad breath, or even lose some teeth, as she grows older. Your vet may recommend an operation, but it is not advisable for very old cats. You can help soothe your catâ€™s sore gums by giving her wet food.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+          <p>other diseases</p><ul data-blast="color">
+          <li><p>Joint issues</p></li>
+          <li><p>Heart problems</p></li>
+          <li><p>Urinary tract issues</p></li></div>
+         </div></ul><br><br>
+
+
+         <!--======= Cancer in catsinfo
+           ============================-->
+
+ <h4 class="post mt-3">Cancer in cats</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Cancer in cats is the leading cause of death among cats. It is caused by uncontrolled cell growth, and affects a wide range of cell types and organs in the body. Feline cancer initially manifests as a lump or bump on any parts of the body. It rapidly grows in the affected cell; attaches itself to the tissue under the skin in that area; and, depending on the tumour, it can spread to other parts of the body..</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+       
+         <p>  Sadly, one in five cats get cancer. Lymphoma, squamous cell carcinoma, mast cell tumour, and bone cancer are all common in cats.
+
+.</p>
+
+<p><b>Four Common Types of Cat Cancer</b></p>
+  <div style="padding:2%"> 
+<ul data-blast="color">
+   <li><p>Mast cell tumors </p></li> 
+    <li><p> Lymphoma </p></li> 
+   <li><p>  Squamous cell carcinoma </p></li> 
+   <li><p> Bone Cancer </p></li> 
+</u></div>
+<p><b>cancer Causes</b></p>
+
+   <p> One of the most common symptoms of cat cancer are “lumps and bumps.” Unusual lumps that change size could be a sign of cancer. A simple test by your vet will indicate the treatment protocol..</p>
+    <div style="padding:2%">
+   <uL data-blast="color"><li><p>Mast cell tumors - Mast cells are white blood cells. Occasionally, they can become tumors, which are abnormal swellings. They may be benign or malignant - many cases they are benign.</p></li>
+   <li><p> Squamous cell carcinoma - Squamous cells are the type of cells that form your pet’s skin. When you look at them closely, they have tiny lines resembling fish scales. These cells also line interior passages of the respiratory and digestive tracts.</p></li>
+   <li><p>Lymphoma - As you may know, lymphoma is a type of blood cancer. It develops in the lymph nodes and causes them to swell. The lymphatic system is responsible for maintaining the flow of fluids throughout the body including cleansing toxins which means cancerous cells can be circulating throughout your pet’s body.</p></li>
+   <li><p>Bone Cancer - The signs of this cancer include lameness, swelling, and lethargy. It is fairly rare but tends to be aggressive. Current evidence doesn’t show a reason for cats developing this type of cancer though we do know it’s more common in larger and giant breed cats..</p></li>
+   </ul></div>
+<p><b>Other Symptoms of Cat Cancer</b></p>
+<div style="padding:2%"><ul data-blast="color">
+   <li><p>  Foul odor - healthy cats don’t smell..</p></li>
+   <li><p>  Persistent sores - sores that don’t heal, need to be looked at by a professional.
+Difficulty with bathroom chores</p></li>
+</ul></div>
+
+
+
+<p><b>cancer Treatment</b></p>
+
+<p>You are probably familiar with the conventional treatments used in humans, namely chemotherapy and radiotherapy, which are also an option for our feline companions.</p>
+<div style="padding:2%"><ul data-blast="color">
+    <li><p><b>NUTRITION</b>It is a well-known fact that nutrition plays a major role in the well-being of any individual. A good diet helps strengthen the immune system, and some foods even help fight cancer both directly and naturally. You will find some examples below.</p></li>
+   <li><p><b> ANTIOXIDANTS</b>The normal action of the metabolism produces so-called free radicals, which are harmful to the body. These free radicals actually attack cells and can cause serious diseases, such as cancer.</p></li>
+   <li><p> <b> CURCUMIN</b>Curcumin is the active ingredient found in the well-known turmeric. It is credited with anti-inflammatory properties and is even believed to have the ability to slow the growth of certain cancers..</p></li>
+
+
+  <p>  <b>MEDICINAL MUSHROOMS</b>Mushrooms are part of a mysterious world, in harmony with the rest of nature. Some mushrooms are deadly, while others can literally save lives. Some people even see them as a miracle cure.</p>
+</ul></div>
+</div>
+</div><br><br>
+
+
+         <!--======Dipylidium infection info
+             ================================-->
+
+ <h4 class="post mt-3">Dipylidium infection</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>The cat tapeworm is a parasite spread to dogs, cats, and people through the ingestion of infected fleas. This parasite is common in cats but rarely causes illness in pets or people..</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+<p>Though it usually clears up on its own, Dipylidium infection is highly contagious to other cats.</p>
+
+<p><b>Symptoms ofDipylidium infection</b></p>
+<div style="padding:2%"> <ul data-blast="color">
+   <li><p> Dipylidium is tapeworm of cats.</p></li>
+   <li><p>  People become infected when they accidentally swallow a flea infected with tapeworm larvae;.</p></li>
+   <li><p>The parasite can sometimes be detected by finding rice-like segments of the tapeworm crawling near the anus or in fresh feces </p></li>
+   <li><p>if cats is heavily infected, it may lose weight</p></li>
+</uL></div>
+
+<p><b>Causes of Dipylidium infection in person</b></p>
+<p>Dipylidium infection is rare in people and usually doesn’t cause any symptoms. :</p>
+<div style="padding:2%"> <ul data-blast="color">
+    <li><p> Sometimes the infection can be detected by finding rice-like segments </p></li>
+    <li><p> segments of the tapeworm crawling near the anus or in fresh poop..</p></li>
+</uL></div>
+
+<p>The cat tapeworm is a parasite spread to dogs, cats, and people through the ingestion of infected fleas. This parasite is common in cats but rarely causes illness in pets or people..</p>
+
+<p><b>Who is at risk to Dipylidium infection</b></p>
+<div style="padding:2%"> <ul data-blast="color">
+     <li><p> The risk of a person getting this tapeworm is extremely low because you must swallow a flea to become infected.</p></li>
+     <li><p>Most cases occur in children..</p></li>
+</uL></div>
+
+<p><b>Dipylidium infection Prevention</b></p>
+<div style="padding:2%"> <ul data-blast="color">
+    <li><p> Control fleas on your pet, and in their indoor and outdoor environments..</p></li>
+    <li><p>Have your veterinarian treat your dogs and cats promptly if they have tapeworms.</p></li>
+    <li><p> Clean up after your pet, especially in playgrounds and public parks. Bury the feces, or place it in a plastic bag and dispose of it in the trash..</p></li>
+    <li><p>Do not allow children to play in areas that are soiled with pet or other animal feces</p></li>
+</uL></div>
+
+<p><b>How is tapeworm infection treated?</b></p>
+<p>Treatment for both animals and humans is simple and very effective. A prescription drug called praziquantel is given, either orally or by injection (pets only)</p>
+<div style="padding:2%"> <ul data-blast="color">
+   <li><p>  The medication causes the tapeworm to dissolve within the intestine.</p></li>
+   <li><p>Since the worm is usually digested before it passes, it may not be visible in your dog’s stool</p></li>
+   <li><p> The drugs are generally well-tolerated.</p></li>
+</uL></div>
+
+</div>
+</div><br><br>
+
+
+         <!========Giardia info
+             =========================>
+<h4 class="post mt-3">Giardia</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Giardia is a parasite that can be found on surfaces or in water, food, or soil that has been contaminated by poop from an infected person or animal..</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+
+<p>Giardia is a parasite that can be found on surfaces or in water, food, or soil that has been contaminated by poop from an infected person or animal..</P>
+
+<p><b> Giardia Symptoms</b></p>
+
+<p>The general symptoms of Giardia are:</p>
+ <div style="padding:2%"> <ul data-blast="color">
+    <li><p>Giardia is a tiny parasite (germ) that causes the diarrheal disease giardiasis.</p></li>
+    <li><p>Giardia is found on surfaces or in soil, food, or water that has been contaminated with feces (poop) from infected people or animals.</p></li>
+</ul></div>
+
+<p><b> Giardia Causes</b></p>
+ <div style="padding:2%"> <ul data-blast="color">
+   <li><p>You can get giardiasis if you swallow Giardia germs.</p></li>
+    <li><p>Giardia spreads easily and can spread from person to person or through contaminated water, food, surfaces, or objects..</p></li>
+    <li><p>The most common way people get sick is by swallowing contaminated drinking water or recreational water (for example, lakes, rivers, or pools)..</p></li>
+</ul></div>
+
+
+<p><b> Giardia Prevention</b></p>
+ <div style="padding:2%"> <ul data-blast="color">
+    <li><p>Practice Good Hand Hygiene.</p></li>
+   <li><p> Avoid Water That Might Be Contaminated.</p></li>
+   <li><p> Avoid Food That Might Be Contaminated.</p></li>
+</ul></div>
+
+
+
+</div>
+</div><br><br>
+
+
+
+            
+
+
+
+<div class="dimg1">
+<img src="images/dis.jpg"width=80%>
+</div>
+
+
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible","arrow right");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+     
+    }
+  });
+}
+</script>
+
+              
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html"class="active" data-blast="color">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

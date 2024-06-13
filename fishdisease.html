@@ -1,0 +1,736 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+ 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.upper-space{
+padding:8% 30% 0% 30%;
+text-align:center;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.right:hover{
+transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+.collapsible {
+  cursor: pointer;
+  width: 100%; 
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+}
+
+ .collapsible:hover {
+   border:dotted;
+   border-width:1px;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    ><!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+         
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="fishinfo.html" >Pet-Fish</a>
+  <a href="fishbreeds.html">Breeds</a>
+  <a href="fishproducts.html">Products</a>
+  <a href="fishdisease.html"class="active"data-blast="color">Diseases</a>
+  <a href="fishvaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onClick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onClick="openNav()" class="tdots">&#8942; </span>
+</div >
+                        
+
+      
+
+<div class="main-content">
+<div class="upper-space">
+ <h2 class="post mt-3"data-blast="bgColor"style="padding:10px">fish Diseases </h2>
+</div>
+<div style="padding:5%">
+<p>As many aquarium keepers will know, there are hundreds of bacterial, parasitic and fungal infections that can affect the health and well-being of your fish. Contrary to popular belief, fish are highly sensitive animals, and environmental changes, no matter how minor, can trigger periods of stress and illness. </p>
+<br><br>
+<p><b> In order to prevent illness, or to prepare yourself should disease or infection become present in your fish tank, you may wish to consider:</b></p>
+
+       <div style="padding:5%"><ul data-blast="color"><p>The following are signs that your fish infection:</p>
+              <li><p> If you have a large aquarium, you may wish to invest in a small fish tank to set up as a hospital tank. Treating an individual fish in a hospital tank will be both easier and cheaper than treating your whole aquarium.</p></li>
+             <li> <p> You will need to remove any activated carbon for the duration of treatment; otherwise, it will absorb the medication from the water, making it ineffective. </p></li>
+             <li> <p> Most fish diseases are the result of stress, and poor water quality plays a large factor in this. The inclusion of a good aquarium filter to maintain optimum water conditions can significantly reduce the risk of disease, as well as regular water changes.</p></li>
+             <li> <p> Freshwater aquarium salt can be added to your tank to help fish recovering from illness. The electrolytes help to promote good health, heal wounds and reduce stress levels. </p></li>    
+             <li> <p>The regular addition of a multivitamin treatment can help boost the immunity of your fish and help prevent disease, as well as for those recovering from an infection. </p></li>
+        </ul> </div>
+<p>Fortunately, most diseases are easily diagnosed and treated, however spotting the signs early is often crucial to recovery.</p>
+
+<p>Outlined below are a number of the more common illnesses to affect freshwater aquarium fish, along with details on their symptoms and advice on how to treat them.</p>
+<br><br><br>
+
+
+
+<!=========Ich (Ichtyophthirius)
+ info
+=======================================================-->
+<center><img src="images/fishes/Ich 1.JPG" height="50%" weight="40%"></center><br><br>
+ <h4 class="post mt-3">Ich virus </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>  Ich is one of the most common diseases encountered in tropical-fish aquariums. Its signs include the presence of small white spots resembling a sprinkle of salt grains on the body and gills, frequent scraping of the body against objects in the environment, loss of appetite, and abnormal hiding behaviour. Affected fish may die from direct tissue damage by the parasite and secondary microbial infections. The parasite matures in the epithelium of the fish’s skin, where it is resistant to chemical treatment of the water environment. The mature parasite leaves the host, settles, and forms a cystlike structure that also protects it from chemical treatment. Immature forms (tomites) are produced in quantity within the cystlike structure and then released.<>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+
+      <div style="padding:2%"> 
+        <p><b> Symptoms</b></p>
+       <div style="padding:2%"><ul data-blast="color" ><p>The following are signs that fish may have Ich disease:</p>
+              <li><p> white salt-like spots starting on the head and spreading over the whole body</p></li>
+             <li> <p> Rapid breathing or gasping at the surface of the water </p></li>
+             <li> <p>  Glancing – itching itself against tank objects and gravel due to irritated skin</p></li>
+             <li> <p> Clamped fins</p></li>    
+       </ul> </div>
+        
+         <p><b>Causes of Ich :</b></p>
+         <p> It is most common for ich to affect fish that are stressed, which is commonly caused by factors such as rapid temperature increases and pH variations.</p>
+        
+         <ul><p><b>Treatment on Ich </b></p>
+         <p> Ich is a common disease of fish, and if the fish are treated immediately, you can usually cure ich and avoid more serious stress and disease. A white spot treatment is a low stress-inducing, gradually compounding treatment ideal for treating ich, although this cannot be used to treat sharks, rays, Harlequin Tuskfish, invertebrates and other related species. </p> 
+        
+     </div>
+</div><br><br>
+
+<!========= Haemorrhagic Septicaemia
+ info
+=======================================================-->
+ <h4 class="post mt-3">Haemorrhagic Septicaemia </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Viral hemorrhagic septicemia (VHS) is an infectious, contagious disease, which attacks mainly rainbow trout. It is the most serious viral disease of farmed rainbow trout, and is manifested by variable clinical symptoms: hemorrhagic syndrome, hydropsy characteristics and anemia, up to nervous disorders.</p>
+
+<p>Infectious hematopoietic necrosis (IHN) of salmonid fry is manifested with hemorrhagiae and edema, accompanied by necrotic alterations of the wall of blood vessels. The hematopoietic tissues of the kidney and spleen of young fish are the most severely affected and are the first tissues to show extensive necrosis. This disease is very similar to VHS.</p>
+
+<p>Lymphocystis disease is an infectious disease, with chronic progression and benign character. It is manifested with the appearance of pebble or wart-like nodules most commonly seen on the fins, skin or gills, although other tissues may be affected.</p>
+ 
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%">   
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Haemorrhagic Septicaemia disease:</p>
+              <li><p> A variety of different symptoms may be present, however, some fish may show no symptom</p></li>
+             <li> <p> Bruised-looking red hue to eyes, skin, and gills</p></li>
+             <li> <p> Open sores </p></li>
+             <li> <p> Bulging eyes</p></li> 
+             <li> <p>Distended abdomen </p></li>
+             <li> <p>Unusual behaviour </p></li>
+             <li> <p>Hemorrhaging of internal organs and skin </p></li>
+             
+        </ul> </div>
+        
+         <p><b>Causes of Haemorrhagic Septicaemia :</b></p>
+         <p>Haemorrhagic Septicaemia is an infection that is brought into aquariums by fish already infected with the virus. </p>
+        
+        <p><b>Treatment on Haemorrhagic Septicaemia :  </b></p>
+         <p> Whilst you can treat your fish with a multipurpose antibiotic to try and reduce mortality, sadly there is no known cure for Haemorrhagic Septicaemia.
+
+ </p> </div>
+   
+</div><br><br><br>
+
+
+<!========= Fungus
+ info
+=======================================================-->
+<center><img src="images/fishes/fungus 3.JPG" height="50%" weight="40%"></center><br><br>
+ <h4 class="post mt-3"> Fungus </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Fungi are a group of organisms called heterotrophs that require living or dead matter for growth and reproduction. Unlike plants, they are incapable of manufacturing their own nutrients by photosynthesis. Fungi are present everywhere--in saltwater or fresh water, in cool or warm temperatures. In most cases, fungi serve a valuable ecological function by processing dead organic debris. However, fungi can become a problem if fish are stressed by disease, by poor environmental conditions, receive poor nutrition, or are injured. If these factors weaken the fish or damage its tissue, fungus can infest the fish. All fungi produce spores--and it is these spores which readily spread disease. The fungal spore is like a seed which is resistant to heat, drying, disinfectants and the natural defence systems of fish The three most common fungal diseases are discussed here. They are known as Saprolegniasis, Branchiomycosis, and Ichthyophonus disease. </p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+   <div style="padding:2%"> 
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Fungus disease:</p>
+              <li><p> Initially, it looks like a white or grey growth in and on the skin, mouth or fins</p></li>
+             <li> <p> Over time the fungus will develop a cotton wool like appearance</p></li>
+             <li> <p> Excess mucus present </p></li>
+             <li> <p> If left untreated, the fungus will kill a fish by continuing to eat away at the fish’s body.</p></li> 
+             
+        </ul> </div>
+        
+         <p><b>Causes of Fungus :</b></p>
+         <p>The most common causes of fungus include poor water quality and large amounts of decomposing material present in the aquarium. It often occurs when fish are suffering from an injury or another illness is present. </p>
+        
+       <p><b>Treatment on Fungus  :  </b></p>
+         <p> Whilst you can treat your fish with a multipurpose antibiotic to try and reduce mortality, sadly there is no known cure for Haemorrhagic Septicaemia.
+
+  </p> </div>
+    
+</div><br><br>
+
+<!========= Dropsy
+ info
+=======================================================-->
+
+ <h4 class="post mt-3"> Dropsy
+ </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>The most engaging problem fish keepers’ face is dealing with fish diseases. If the symptoms are not detected and dealt with at an early stage, depending on the type of bacteria or infection, all of the fish in your aquarium might die in a single swoop. One of those problems is the Dropsy fish disease. </p>
+<p> The Dropsy fish disease exists since fish keeping started out basically, that’s why the name is so old. If we would discover the Dropsy fish disease today, we would probably name it the “Edema fish disease”. The disease targets the insides of its target and creates a swelling in the abdomen, mainly because of accumulating water in the fishes belly.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+   <div style="padding:2%">      
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Dropsy disease:</p>
+              <li><p> Swollen abdomen</p></li>
+             <li> <p>Protruding scales around the swollen area </p></li>
+             <li> <p>Loss of appetite </p></li>
+             <li> <p> Sluggish and lack of energy</p></li> 
+                     </ul> </div>
+        
+         <p><b>Causes of Dropsy :</b></p>
+         <p> Dropsy is usually caused by a bacterial infection of the kidneys which triggers fluid retention, although it can also be the result of poor water quality and micro-organisms in your aquarium.  The disease more commonly affects fish experiencing stress, which compromises their immune system. </p>
+        
+       <p><b>Treatment on Dropsy  :  </b></p>
+         <p> Catching the disease early is crucial to the success of treatment. Parasite treatment can be applied to your tank over the course of 2 days, but one treatment should work.</p> 
+<p>Perhaps the most significant treatment is to remove the underlying cause of stress for the fish, and providing supportive care to the sick fish. Examining the water quality, temperature, ammonia levels, tank mate compatibility and other diseases present in the tank are highly recommended. </p></div>
+    
+</div><br><br>
+
+<!========= Fin Rot
+ info=======================================================-->
+
+
+ <h4 class="post mt-3"> Fin Rot
+
+ </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p> Fin rot is a symptom of disease or the actual disease in fish. This is a disease which is most often observed in aquaria and aquaculture, but can also occur in natural populations.</p>
+<p>Fin rot can be the result of a bacterial infection (Pseudomonas fluorescens, which causes a ragged rotting of the fin), or as a fungal infection (which rots the fin more evenly and is more likely to produce a white "edge"). Sometimes, both types of infection are seen together. Infection is commonly brought on by bad water conditions, injury, poor diet, stress, or as a secondary infection in a fish which is already stressed by other disease.</p>
+<p>Fin rot starts at the edge of the fins, and destroys more and more tissue until it reaches the fin base. If it does reach the fin base, the fish will never be able to regenerate the lost tissue. At this point, the disease may begin to attack the fish's body; this is called advanced fin and body rot.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+     <div style="padding:2%">   
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Fin Rot disease:</p>
+              <li><p> A progressive deterioration of the tail and/or fins</p></li>
+             <li> <p> Fins colour may fade </p></li>
+                   </ul> </div>
+        
+         <p><b>Causes of Fin Rot :</b></p>
+         <p> Fin Rot is often a symptom present in other illnesses, however, this can occur as a stand-alone issue. This is normally a result of a bacterial infection, which causes the tail or fins to fray as the body’s immune system is lowered whilst fighting off the illness. Fin rot can also be induced by stress, where fish are bullied or injured by aggressive tank mates. </p>
+        
+        <p><b>Treatment on Fin Rot  :  </b></p>
+         <p> Firstly it is advisable to check that your pH levels are correct. Adding salt to the water can help treat this illness by adding electrolytes to help repair fins. Typically fin rot resolves itself over time, however a treatment of Myxazin can be applied to the water.
+
+</p> </div>
+   
+</div><br><br>
+
+<!========= Pop Eye (Exophthalmia)
+ info
+=======================================================-->
+
+ <h4 class="post mt-3"> Pop Eye (Exophthalmia)
+
+ </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p> Popeye disease is a condition in which a fish's eye swells and bulges from the socket. The eyes may also appear cloudy. When left untreated, popeye disease can cause a fish to lose its eyesight or even result in the loss of an eye.1 Fish popeye has several potential causes, including infection, injury, and poor water condition. You can usually treat popeye in fish, but the treatment depends on the cause.</p>
+<p> Popeye disease—medically known as exophthalmia—is a condition where the eye of the fish is swollen and protrudes abnormally from its socket. Note that some species of aquarium fish, such as black moor goldfish and telescope-eye goldfish normally have protruding eyes; this is not the same as popeye disease. Fish popeye can affect a single eye or both eyes.1 The fish's eyes may also appear cloudy in some cases.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+  <div style="padding:2%">     
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Pop Eye (Exophthalmia) disease:</p>
+              <li><p> large protruding eyes, either one or both eyes</p></li>
+             
+        </ul> </div>
+        
+         <p><b>Causes of Pop Eye (Exophthalmia) :</b></p>
+         <p> Pop eye is often the result of a bacterial infection behind the eye, which causes them to bulge outwardly. However, it can be the result of other issues, such as poor water quality or injury. </p>
+        
+        <p><b>Treatment on Pop Eye (Exophthalmia)  :  </b></p>
+<div style="padding:2%"> <ul data-blast="color">
+        <li><p> Whilst pop-eye is very easy to identify, it can be more difficult to treat as it has many possible causes.</p></li>
+<li><p> If it is affecting more than one fish, water quality is the likely culprit. Carry out daily 30% water changes for up to five days and check your pH levels.</p></li>
+<li><p> If it is the result of an injury, quarantine your fish in a hospital tank to let it recover.</p></li>
+<li><p> If both eyes are affected, it is more likely to be a bacterial infection and an application of Myxazin to your water can resolve this.
+
+</p></li></ul></div>
+   </div>
+</div><br><br>
+
+<!========= Anchor Worms
+ info
+=======================================================-->
+<center><img src="images/fishes/anchor worm.JPG" height="50%" weight="40%"></center><br>
+ <h4 class="post mt-3"> Anchor Worms
+
+ </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p> Anchor worms are macroscopic parasites, meaning they can be seen by the naked eye. They are commonly found on koi and goldfish, but can be found on many freshwater fish species. The "worm" part extending out into the water is actually the female reproductive structures. Treating these parasites can be challenging depending on your aquarium setup and the parasite load.</p>
+<p> Anchor worms (Lernaea spp.) are not actually worms, but a crustacean copepod parasite that embeds into the fish’s skin and has a worm-like tail that sticks out of the skin. These parasites have multiple non-parasitic stages that take place in the water. Once a male mates with a female, she attaches to a fish to mature into a reproductively-active adult. These parasites get the name "worm" from the extending female reproductive structure. Juvenile anchor worms will be free-swimming in your aquarium, but will not be a nuisance for your fish.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+     <div style="padding:2%">   
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Anchor Worms disease:</p>
+              <li><p> String-like worms visible on fish’s skin</p></li>
+             <li> <p> Points of attachment are marked by inflammation </p></li>
+             <li> <p>Glancing - scratching against objects to itch the infected area </p></li> 
+        </ul> </div>
+        
+         <p><b>Causes of Anchor Worms :</b></p>
+         <p> Anchor worms are small parasites that burrow into the fish’s skin and enter the muscles where they lay their eggs. They are the result of introducing new, infected fish into your tank. </p>
+        
+        <p><b>Treatment on Anchor Worms  :  </b></p>
+         <p> A single dose water treatment such as Aquarium Rescue Parasite Control can be applied to the water to destroy the parasites. Any visible wounds can be cleaned with an antiseptic like iodine.</p> 
+</div>
+   
+</div><br><br>
+
+
+<!========= Lice
+ info
+=======================================================-->
+
+ <h4 class="post mt-3"> Lice
+ </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Fish lice (Argulus spp; family Argulidae) are branchiuran crustaceans that parasitize both marine and freshwater fishes. Argulus spp can be a major threat to fish health, because heavy infestations can cause significant morbidity and mortality. In addition, fish lice are known to be the vehicle for other fish diseases. During rounds at our facility, Argulus japonicus was collected from the caudal and anal fins of 3 goldfish (Carassius auratus).These goldfish were asymptomatic, and no additional cases were noted after manual removal of the lice. As soon as any Argulus organisms are identified, management and treatment are recommended because infections can escalate rapidly. Currently, there are no FDA-approved drugs for the control and treatment of this parasite, but several chemicals including organophosphates and diflubenzuron have been used with success. The screening and quarantine of incoming fish is the best way to avoid a facility-wide Argulus infestation. </p>
+<p>Argulus species (Family: Argulidae), more commonly known as fish lice, are members of a large group of branchiuran parasites that infest and cause disease in fish. The argulids are crustaceans and are related to crabs, lobsters, and shrimp.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+       <div style="padding:2%"> 
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Lice disease:</p>
+              <li><p> Lice appear as flat, green/brown dots (up to one inch) crawling on the skin</p></li>
+             <li> <p> Red spots on fish caused by skin irritation </p></li>
+             <li> <p>Fish are aggravated and restless </p></li>
+             <li> <p> Glancing - scratching against objects to itch the irritated area</p></li> 
+             
+        </ul> </div>
+        
+         <p><b>Causes of Lice :</b></p>
+         <p> The presence of lice usually stems from fish being introduced to an aquarium that were previously housed in an outdoor pond. Lice move from one host fish to another very quickly, so quick action is vital to controlling the spread of lice. </p>
+        
+         <p><b>Treatment on Lice  :  </b></p>
+         <p> As with anchor worms, a single dose water treatment such as Aquarium Rescue Parasite Control can be applied to the water to destroy the parasites. Any visible wounds can be cleaned with an antiseptic like iodine.</p> </div>
+    
+</div><br><br>
+
+<!========= Clamped Fin  
+ info
+=======================================================-->
+
+ <h4 class="post mt-3"> Clamped Fin
+ </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p> Clamped fins is a condition among aquarium fish in which the fish continually holds its fins folded against the body. The fins are not fanned out and the fish is listless. Clamped fins does not indicate one specific disease. Instead, clamped fins can indicate a few different problems such as bad water quality or parasites. Therefore, you have to determine the exact problem to treat the fish. Regularly providing a clean, healthy environment for your fish should prevent clamped fins. However, if you observe your fish carefully each day, when clamped fins appear, you will have plenty of time to do remedy the problem.</p>
+<p> The most common cause is ich, which appears as white spots on the fish that look like salt crystals. Another common cause is velvet, which looks like a dusty, velvety rust or yellow coating on the fish. Treat the fish immediately because diseases like velvet can be fast and fatal. Ask your local aquarium or pet shop staff for a medication to remedy the problem. Follow the label directions for medicating the tank.</p>
+<p>Test the water quality of the tank, especially if you do not see any evidence of an infection. The pH of the water can suddenly change, stressing the fish and causing clamped fins. Add aquarium chemicals to the water to bring the pH back into a healthy range for the type of fish you have.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+     <div style="padding:2%">  
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Clamped Fin disease:</p>
+              <li><p> Fins are folded against the body</p></li>
+             <li> <p>Slow, lethargic behaviour </p></li> 
+             
+        </ul> </div>
+        
+         <p><b>Causes of Clamped Fin :</b></p>
+<p> Clamped fin is not one specific disease, but a result of multiple issues, such as bad water quality or parasitic infection.</p>
+         
+         <p><b>Treatment on Clamped Fin  :  </b></p>
+         <p> Firstly, test the water in your fish tank and carry out a partial water change. If the clamped fin is the result of an infection, a multipurpose antibiotic can be applied to the water, and adding one tablespoon of aquarium salt per gallon will also help.</p>
+<p> Should it be the result of a parasitic infection, a single dose water treatment such as Aquarium Rescue Parasite Control can be applied to the water to destroy the parasites</p></div>
+    
+</div><br><br>
+
+
+<!========= Red or White Sores 
+ info
+=======================================================-->
+
+ <h4 class="post mt-3"> Red or White Sores  </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p> White spot is a contagious parasitic disease of fish. Caused by Ichyophthirius multifilis, the parasite infects the fish after moving from the bottom of the pond. The parasite attaches itself to the fish, moving under the skin where it feeds on cells and body fluids. Later in the parasite's life cycle, it moves out of the fish and attaches itself to pond material where it repeatedly divides itself thousands of times. These then hatch and the process begins again.The parasite causes damage to fish tissue which can lead to bacterial and fungal infections</p>
+<p> Red sore disease in game fish is common in the spring and fall, and often due to the effects of two opportunistic aquatic pathogens, Heteropolaria sp. and Aeromonas hydrophila . Heteropolaria sp. is a ciliated protozoan, found almost everywhere in fresh water. It causes problematic infestations on game fish.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+       <div style="padding:2%"> 
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Red or White Sores  disease:</p>
+              <li><p> Open sores that are white or red in colour</p></li>
+             <li> <p> Lethargic behaviour </p></li>
+             <li> <p>Possible fin rot </p></li> 
+             
+        </ul> </div>
+        
+         <p><b>Causes of Red or White Sores  :</b></p>
+         <p> Many things can cause sores, such as injury, fighting with tank mates and small wounds that become infected.</p>
+        
+        <p><b>Treatment on Red or White Sores   :  </b></p>
+         <p> A new sore can usually be cured by adding aquarium salt to the water to help repair the infected area. Older or larger sores may be at a greater risk of bacterical infection, so the application of a water treatment like Myxazin will help treat the affected area.</p> 
+</div>
+    
+</div><br><br>
+
+<!========= Skin Flukes (Gyrodactylus)
+  info
+=======================================================-->
+
+ <h4 class="post mt-3"> Skin Flukes (Gyrodactylus)
+ 
+ </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p> Gyrodactylus salaris, commonly known as salmon fluke, is a tiny monogenean ectoparasite which lives on the body surface of freshwater fish. This leech-like parasite has been implicated in the reduction of Atlantic salmon populations in the Norwegian fjords. It also parasitises other species, including rainbow trout.</p>
+
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+       <div style="padding:2%"> 
+        <p><b>Symptoms: </b></p>
+       <div style="padding:2%"><ul data-blast="color"><p>The following are signs that fish may have Skin Flukes (Gyrodactylus) disease:</p>
+              <li><p> Rapid breathing or gasping at the surface of the water</p></li>
+             <li> <p> Rapid opening and closing of gills </p></li>
+             <li> <p>Mucus is present on the gills </p></li> 
+             <li><p> Spider web abrasions on the skin</p></li>
+             <li><p>In more serious cases part of the gills may be eaten away</p></li>
+             <li><p> Glancing – itching itself against tank objects and gravel due to irritated skin</p></li> 
+        </ul> </div>
+        
+         <p><b>Causes of Skin Flukes (Gyrodactylus) :</b></p>
+         <p> These small worm-like parasites are hardly visible to the naked eye, but can enter your tank when you introduce another fish or plant carrying the parasite or its eggs.</p>
+        
+        <p><b>Treatment on Skin Flukes (Gyrodactylus)  :  </b></p>
+         <p> If left untreated, flukes will destroy the gills of your fish, and as a result, your fish will also die, so early treatment is key. For individually affected fish, repeated salt baths over two to three days can help, and the use of Sterazin over the course of 10 days will destroy the parasites in all stages of their life cycle, also helping to sterilise the aquatic plants in your tank. However, it is virtually impossible to completely remove the presence of flukes from your aquarium and it is highly likely that your entire tank may be affected by flukes in the future.</p> 
+</div>
+   
+</div><br><br>
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible","arrow right");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+     
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html"class="active" data-blast="color">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+

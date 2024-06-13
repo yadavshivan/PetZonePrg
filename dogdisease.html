@@ -1,0 +1,844 @@
+<html lang="zxx">
+
+<head>
+    <title>Project on petzone</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+   
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script src="https://kit.fontawesome.com/88b60e4b37.js" crossorigin="anonymous"></script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/blast.min.css" rel="stylesheet" />
+
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!--lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- lightbox -->
+
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- top navbar-->
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+ 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #d1d1d1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dots {
+  color:#f2f2f2;
+ transition: margin-left .5s;
+}
+.tdots{
+color:white;
+margin:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.upper-space{
+padding:8% 30% 0% 30%;
+text-align:center;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.right:hover{
+transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+.collapsible {
+  cursor: pointer;
+  width: 100%; 
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+}
+
+ .collapsible:hover {
+   border:dotted;
+   border-width:1px;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="blast-box">
+            <div class="blast-frame">
+                <p>Color schemes</p>
+                <div class="blast-colors d-flex justify-content-center">
+                    <div class="blast-color">#00a8e0</div>
+                    <div class="blast-color">#ff322e</div>
+                    <div class="blast-color">#ff9900</div>
+                    <div class="blast-color">#34bf49</div>
+                    <div class="blast-color">#85929E </div>
+                    <div class="blast-color">#8E44AD </div>
+                    <div class="blast-color"> #48C9B0</div
+
+                    <!-- you can add more colors here -->
+                </div>
+                <p class="blast-custom-colors">Select Color</p>
+                <input type="color" name="blastCustomColor" value="#cf2626">
+            </div>
+            <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+        </div>
+
+             <!--========navbar
+                     =============-->
+<div id="dots">
+<div class="topnav" id="myTopnav"data-blast="color">
+  <a href="dogsinfo.html" >Pet-Dogs</a>
+  <a href="dogbreeds.html">Breeds</a>
+  <a href="dogproducts.html">Products</a>
+  <a href="dogdisease.html"class="active"data-blast="color">Diseases</a>
+  <a href="dogvaccination.html">Vaccination </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="tdots">&#8942; </span>
+</div >
+
+  
+                        
+
+      
+
+<div class="main-content">
+<div class="upper-space">
+ <h2 class="post mt-3"data-blast="bgColor"style="padding:10px">Dogs Diseases </h2>
+</div>
+<div style="padding:5%">
+<p>As a dog parent, it is important to recognize the signs and symptoms of common illnesses so you can seek veterinary help for your canine friend as soon as possible. Read on for information about diseases and other medical inflictions that frequently impact dogs.</p>
+<br><br>
+
+
+<!=========Diabetes  info
+=======================================================-->
+
+ <h4 class="post mt-3">Diabetes </h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Diabetes in dogs is a complex disease caused by either a lack of the hormone insulin or an inadequate response to insulin. After a dog eats, his digestive system breaks food into various components, including glucose—which is carried into his cells by insulin, a hormone secreted by the pancreas. When a dog does not produce insulin or cannot utilize it normally, his blood sugar levels elevate. The result is hyperglycemia, which, if left untreated, can cause many complicated health problems for a dog.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+   <div style="padding:2%"><p> It is important to understand that diabetes is considered a manageable disorder—and many diabetic dogs can lead happy, healthy lives.</p>
+       <p>Diabetes can be classified as:</p>
+           <div style="padding:2%">  <p><b>Type I</b> (lack of insulin production)</p>
+               <p><b>Type II</b> (impaired insulin production along with an inadequate response to the hormone).</p></div>
+        
+        <p>The most common form of the disease in dogs is Type I, insulin-dependent diabetes, which occurs when the pancreas is incapable of producing or secreting adequate levels of insulin. Dogs who have Type I diabetes require insulin therapy to survive.</p>
+        <p><b>Diabetes Symptoms in Dogs</b></p>
+       <div style="padding:2%"><ul><p>The following are signs that your dog may be diabetic:</p>
+              <li><p>Change in appetite</p></li>
+             <li> <p>  Excessive thirst/increase in water consumption</p></li>
+             <li> <p> Weight loss</p></li>
+             <li> <p> Weight loss</p></li>    
+             <li> <p>Increased urination</p></li>
+             <li> <p>Unusually sweet-smelling or fruity breath</p></li>
+             <li> <p>Lethargy</p></li>
+             <li> <p> Dehydration</p></li>
+             <li> <p> Urinary tract infections</p></li>
+             <li><p>Vomiting</p></li>
+             <li> <p> Cataract formation, blindness</p></li>
+             <li> <p>Chronic skin infections</p></li>
+        </ul> </div>
+        
+         <p><b>Causes of Diabetes</b></p>
+         <p>The exact cause of diabetes is unknown. Autoimmune disease, genetics, obesity, chronic pancreatitis, certain medications and abnormal protein deposits in the pancreas can play a major role in the development of the disease.</p>
+        <div style="padding:2%"> <ul><p><b>Dogs More Prone to Diabetes</b></p>
+             <li><p>It is thought that obese dogs and female dogs may run a greater risk of developing diabetes later in life (6-9 years of age)</p></li>
+             <li><p>Some breeds may also have a greater risk, include Australian Terriers, Standard and Miniature Schnauzers, Dachshunds, Poodles, Keeshonds and Samoyeds</p></li>
+             <li><p>Juvenile diabetes can also be seen and is particularly prevalent in golden retrievers and keeshonds<p/></li>
+         </ul></div>
+         <p><b>Diagnosing Diabetes</b></p>
+         <p>To properly diagnose diabetes, your veterinarian will collect information about clinical signs, perform a physical examination and check blood work and urinalysis.</p>
+        <div style="padding:2%"> <ul><p><b>Treating Diabetes</b></p>
+            <li><p>Every diabetic dog is an individual and will respond differently to therapy. Diabetes treatment is based on how severe the signs of disease are and whether there are any other health issues that could complicate therapy.</p></li>
+            <li><p>Some dogs are seriously ill when first diagnosed and require intensive hospitalized care for several days to regulate their blood sugar levels.</p></li>
+            <li><p>Dogs who are more stable when first diagnosed may respond to oral medication or a high-fiber diet that helps to normalize glucose levels in the blood.</p></li>
+            <li><p>For most dogs, insulin injections are necessary for adequate regulation of blood glucose. Once your pet’s individual insulin treatment is established, typically based on weight, you will be shown how to give him his insulin injections at home.</p></li>
+            <li><p>Spaying your dog is recommended, as female sex hormones can have an effect on blood sugar levels.</p></li>
+         </ul></div>
+
+         <p>As your veterinarian will explain, it’s important to always give your dog insulin at the same time every day and feed him regular meals in conjunction with his medication; this allows increased nutrients in the blood to coincide with peak insulin levels. This will lessen the chance that her sugar levels will swing either too high or too low. You can work with your vet to create a feeding schedule around your pet’s medication time. It is also important to avoid feeding your diabetic dog treats that are high in glucose. Regular blood glucose checks are a critical part of monitoring and treating any diabetic patient, and your veterinarian will help you set up a schedule for checking your dog’s blood sugar.</p>
+         <p><b>Diabetes Prevention</b></p>
+         <p>Although a certain form of diabetes—the type found in dogs less than a year of age—is inherited, proper diet and regular exercise can go a long way to avoid the development of diabetes. Aside from other negative effects, obesity is known to contribute to insulin resistance.</p>
+         <p><b>If You Suspect Your Dog Has Diabetes</b></p>
+         <p>If your dog is showing any abnormal clinical signs as listed above, make an appointment to see your veterinarian immediately. If a diabetic dog is not treated, he can develop secondary health problems like cataracts and severe urinary tract problems. Ultimately, untreated diabetes can cause coma and death.</p>
+    </div>
+</div><br><br>
+
+
+     <!--=======cancer info
+           ===========================================-->
+
+ <h4 class="post mt-3">Cancer</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Finding out that a loved one has cancer can be very scary and confusing. When that loved one is your dog, it’s important to keep in mind that different veterinarians might have different views on the best way to treat the disease. It’s always a good idea to seek out a second opinion, perhaps from a veterinary oncologist, and carefully review your options.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+          <p>Cancer is a class of diseases in which cells grow uncontrollably, invade surrounding tissue and may spread to other areas of the body. As with people, dogs can get various kinds of cancer. The disease can be localized (confined to one area, like a tumor) or generalized (spread throughout the body).</p>
+          <p><b>Causes of Cancer</b></p>
+          <p>Cancer is a “multifactorial” disease, which means it has no known single cause.<b> However, we do know that both hereditary and environmental factors can contribute to the development of cancer in dogs.</b></p>
+          <p><b>Cancer Symptoms</b></p>
+          <ul><p>Symptoms of cancer in dogs may include:</p>
+         <div style="padding:2%">  
+          <li><p>Lumps (which are not always malignant, but should always be examined by a vet)</p></li>
+          <li><p>Swelling</p></li>
+          <li><p>Persistent sores</p></li>
+          <li><p>Abnormal discharge from any part of the body</p></li>
+          <li><p>Bad breath</p></li>
+          <li><p>Listlessness/lethargy</p></li>
+          <li><p>Rapid, often unexplained weight loss</p></li>
+          <li><p>Sudden lameness</p></li>
+          <li><p>Black, tarry stools (a symptom of ulcers, which can be caused by mast cell tumors)</p></li>
+          <li><p>Decreased or loss of appetite</p></li>
+          <li><p>Difficulty breathing, urinating or defecating</p></li>
+         </div></ul>
+
+         <ul> <p><b>Diagnosing Cancer in Dogs</b></p>
+         <div style="padding:2%">  
+         <li> <p><b>If a lump is present,</b> the first step is typically a needle biopsy, which removes a very small tissue sample for microscopic examination of cells. Alternately, surgery may be performed to remove all or part of the lump for diagnosis by a pathologist.</p></li>
+         <li> <p><b>Radiographs (xrays), ultrasound, blood evaluation and other diagnostic tests may also be helpful</b> in determining if cancer is present or if it has spread.</p></li>
+         </div></ul>
+
+         <ul> <p><b>Dogs More Prone to Cancer</b></p>
+         <div style="padding:2%">  
+         <li> <p>Though cancer can be diagnosed in dogs of all ages and breeds,<b> it is much more common in older dogs</b>.</p></li>
+         <li> <p>Certain breeds are prone to specific cancers.<b> Boxers, Boston terriers and Golden Retrievers</b> are among the breeds that most commonly develop mast cell tumors or lymphoma, while large and giant breeds like Great Danes and Saint Bernards are much more likely to suffer from bone cancer than smaller breeds.</p></li>
+       </div>
+        <p>It is important to be familiar with the diseases to which your dog might have a breed disposition.</p>
+        </ul>
+
+        <ul> <p><b>Cancer Prevention </b></p>
+         <div style="padding:2%">  
+         <li> <p><b>Having your dog altered at a young age can dramatically</b> reduce their chance of getting certain types of cancer.</p></li>
+         <li> <p><b>Breast</b> cancer can be avoided almost completely by having your dog spayed before her first heat cycle, while a neutered male dog has zero chance of developing testicular cancer.</p></li>
+         </div></ul>
+
+       <ul> <p><b>Cancer Treatments</b></p>
+         <div style="padding:2%">  
+         <li> <p><b>Treatment options vary and depend on the type and stage of cancer.</b></p></li>
+         <li> <p>Common treatments include surgery, chemotherapy, radiation and immunotherapy or a combination of therapies. Success of treatment depends on the type and extent of the cancer and the aggressiveness of the therapy. Of course, early detection is best.</p></li>
+         <li> <p><b>Some dog owners opt for no treatment of the cancer, in which case palliative end of life care, including pain relief, should be considered.</b> Regardless of how you proceed after a diagnosis of cancer in your pet, it is very important to consider his quality of life when making future decisions.</p></li>
+          <li> <p><b>Some cancers can be cured, while others cannot</b>. Please note that if your dog’s cancer is not curable, there are still many things you can do to make your pet feel better. Don’t hesitate to talk to your vet about your options. And remember good nutrition and loving care can greatly enhance your dog’s quality of life.</p></li>
+         </div></ul>
+
+       <p><b>Knowing When to Consult Your Vet</b></p>
+       <p>Contact your veterinarian immediately if your dog shows any of the clinical signs mentioned on the list above. Should your dog receive a diagnosis of cancer, you may wish to consult a veterinary oncologist, often employed by specialty veterinary practices and teaching hospitals.</p>
+   </diV>
+</div><br><br>
+
+
+         <!--======= Heartworm info
+           ============================-->
+
+ <h4 class="post mt-3">Heartworm</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Heartworm is a parasitic worm that lives in the heart and pulmonary arteries of an infected animal. The worms travel through the bloodstream—harming arteries and vital organs as they go—ultimately completing their journey to the vessels of the lung and the heart chamber about six months after the initial infection. Several hundred worms can live in one dog for five to seven years.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+       
+         <p>  Heartworm disease is serious and can be fatal.</p>
+
+<p><b>Heartworm Symptoms</b></p>
+  <div style="padding:2%"> 
+<ul><p><b>Symptoms of heartworm can include:</b></p>
+
+   <li><p> Labored breathing</p>/li> 
+    <li><p> Coughing</p>/li> 
+   <li><p>  Vomiting</p>/li> 
+   <li><p>  Weight loss, listlessness and fatigue after only moderate exercise</p>/li> 
+    <li><p> Some dogs exhibit no symptoms at all until late stages of infection</p>/li> 
+</u></div>
+<p><b>Heartworm Causes</b></p>
+
+   <p> Heartworms are transmitted from animal to animal by mosquitoes.</p>
+    <div style="padding:2%">
+   <uL><li><p> An animal must carry at least two heartworms (a male and a female) in order for female heartworms to reproduce.</p></li>
+   <li><p> Females produce babies called “microfilaria,” which are shed into an animal’s bloodstream but are not capable of directly causing heartworm without first passing through a mosquito.</p></li>
+   <li><p> Microfilariae must be taken up by biting mosquitoes, and transform into infective larvae over a two-week period inside the insect.</p></li>
+   <li><p> When a mosquito next bites a susceptible animal, the infective larvae enter the tissues and begin a migration into the blood vessels.</p></li>
+   <li><p> Heartworms enter an animal’s bloodstream as tiny, invisible larvae, but can reach lengths of more than twelve inches at maturity.</p></li>
+   </ul></div>
+<p><b>Diagnosing Heartworm</b></p>
+<div style="padding:2%"><ul>
+   <li><p>  Heartworm disease is diagnosed by examination, radiographs or ultrasound, and a veterinarian-administered blood test.</p></li>
+   <li><p>  All dogs should be routinely screened with a blood test for heartworm either annually in spring or before being placed on a new prescription for a heartworm preventative.</p></li>
+</ul></div>
+
+<p><b>Dogs More Prone to Heartworm</b></p>
+<div style="padding:2%"><ul>
+    <li><p> Heartworm infestation can happen to any dog, but since mosquitoes are their carriers, dogs who live in hot, humid regions are at greatest risk.</p></li>
+   <li><p>  The disease has been seen in every state except Alaska, but is most common in or on the East Coast, southern United States and Mississippi River Valley.</p></li>
+</ul></div>
+
+<p><b>Preventing Heartworm</b></p>
+<div style="padding:2%"><ul>
+  <li><p> Heartworm is easily preventable with an inexpensive, chewable pill or topical medication available as a vet’s prescription. The pills or topical are usually administered monthly and can be given to dogs under 6 months of age without a blood test. Older animals must be screened for the disease prior to starting medication.</p></li>
+   <li><p> The American Heartworm Society recommends keeping your dog on the medication all year long. Not only does this avoid errors, but many of the products also prevent other intestinal parasites.</p></li>
+</ul></div>
+
+<p><b>Heartworm Treatment</b></p>
+
+<p>After diagnosis, a thorough examination of the infected dog should be conducted to evaluate the best course of treatment and the potential risks involved.</p>
+<div style="padding:2%"><ul>
+    <li><p> The most common course of treatment is a series of injections of drugs called adulticides into the dogs’ muscle. This cure has a high success rate and usually requires hospitalization.</p></li>
+   <li><p>  All treatment protocols require several weeks of exercise restriction after treatment and are not without risk. Disease prevention is a much better and safer option.</p></li>
+   <li><p>  After treatment, your dog should be placed on a preventative medication to reduce the risk of infection.</p></li>
+</ul></div>
+
+<p><b>When to Consult Your Veterinarian</b></p>
+
+  <p>  If you notice that your dog’s energy has decreased, he seems ill, or he’s exhibiting any of the general symptoms described above, please contact your veterinary immediately.</p>
+
+</div>
+</div><br><br>
+
+
+         <!--======Kennel Cough info
+             ================================-->
+
+ <h4 class="post mt-3">Kennel Cough</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Kennel cough is a term loosely used to describe a complex of respiratory infections—both viral and bacterial—that causes inflammation of a dog’s voice box and windpipe. It’s a form of bronchitis and is similar to a chest cold in humans.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+<p>Though it usually clears up on its own, kennel cough is highly contagious to other dogs.</p>
+
+<p><b>Symptoms of Kennel Cough</b></p>
+<div style="padding:2%"> <ul>
+   <li><p> A persistent dry cough with a “honking” sound.</p></li>
+   <li><p> In most cases, she’ll appear healthy except for the cough.</p></li>
+   <li><p>Gagging</p></li>
+   <li><p>Coughing up white foamy phlegm</p></li>
+   <li><p> Fever</p></li>
+   <li><p>Nasal discharge</p></li>
+</uL></div>
+
+<p><b>Causes of Kennel Cough</b></p>
+<p>Dogs can catch kennel cough in several ways:</p>
+<div style="padding:2%"> <ul>
+    <li><p> Kennel cough can spread through aerosols in the air, directly from dog to dog, or through germs on contaminated objects.</p></li>
+    <li><p> Kennel cough is often spread in enclosed areas with poor air circulation, like a kennel or an animal shelter.</p></li>
+    <li><p> Kennel cough can also spread through direct contact like shared water dishes or even greeting another dog.</p></li>
+</uL></div>
+
+<p>Most kennels will not board a pet without proof of a recent vaccination against parainfluenza and Bordetella, two of the main causes of kennel cough.</p>
+
+<p><b>Dogs More Prone to Kennel Cough</b></p>
+<div style="padding:2%"> <ul>
+     <li><p>Dogs who have frequent contact with other dogs, especially in enclosed or poorly-ventilated areas, are most prone to becoming infected.</p></li>
+     <li><p>Young and unvaccinated dogs are also at higher risk.</p></li>
+</uL></div>
+
+<p><b>Kennel Cough Prevention</b></p>
+<div style="padding:2%"> <ul>
+    <li><p> The best way to prevent kennel cough is to prevent exposure.</p></li>
+    <li><p>Vaccinations are also available for several of the agents known to be involved in kennel cough, including parainfluenza, Bordetella and adenovirus-2.</p></li>
+    <li><p> Ask your vet if these are recommended, and how often.</p></li>
+    <li><p>Vaccinations aren’t useful if a dog has already caught the virus.</p></li>
+</uL></div>
+
+<p><b>Kennel Cough Treatment</b></p>
+<p>See your veterinarian if your dog develops a cough. In some cases, you may be advised to simply let kennel cough run its course and heed the following:</p>
+<div style="padding:2%"> <ul>
+   <li><p> Dogs with kennel cough should be isolated from other dogs.</p></li>
+   <li><p> A humidifier, vaporizer or steam from a shower can provide relief for irritated breathing passages.</p></li>
+   <li><p> Avoid exposing your dog to cigarette smoke or other noxious, irritating fumes.</p></li>
+   <li><p> A cough suppressant or antimicrobial may be prescribed.</p></li>
+   <li><p> If your dog pulls against her collar while being walked, replace it with a harness until the coughing subsides.</p></li>
+   <li><p> Supportive care is very important—be sure your dog is eating, drinking and in a stress-free environment.</p></li>
+</uL></div>
+
+<p><b>Kennel Cough Recovery</b></p>
+<div style="padding:2%"> <ul>
+   <li><p> In most cases, the signs of kennel cough gradually decrease and disappear after three weeks.</p></li>
+    <li><p>Young puppies, elderly dogs and other immunocompromised animals may take up to six weeks or more to recover.</p></li>
+    <li><p>Animals may remain infectious for long periods of time even after the symptoms have cleared up.</p></li>
+</uL></div>
+
+<p><b>When to Consult Your Veterinarian</b></p>
+<div style="padding:2%"> <ul>
+   <li><p> If you suspect your dog has kennel cough, immediately isolate her from all other dogs and call your veterinarian.</p></li>
+   <li><p> After a dog has been diagnosed, you should see some improvement in your dog’s condition within one week of treatment, but be alert to how long the symptoms last.</p></li>
+   <li><p> If your dog has nasal discharge, is breathing rapidly, refuses to eat or seems lethargic, take her back to the veterinarian right away.</p></li>
+   <li><p> Serious cases of kennel cough can lead to pneumonia if left untreated.</p></li>
+</uL></div>
+</div>
+</div><br><br>
+
+
+         <!========Parvovirus info
+             =========================>
+<h4 class="post mt-3">Parvovirus</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Canine parvovirus is a highly contagious viral disease that can produce life-threatening illness.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+
+<p>The virus attacks rapidly-dividing cells in a dog’s body, most severely affecting the intestinal tract. Parvovirus also attacks the white blood cells, and when young animals are infected, the virus can damage the heart muscle and cause lifelong cardiac problems.</P>
+
+<p><b>Parvovirus Symptoms</b></p>
+
+<p>The general symptoms of parvovirus are:</p>
+ <div style="padding:2%"> <ul>
+    <li><p>Lethargy</p></li>
+    <li><p>Severe vomiting</p></li>
+    <li><p>Loss of appetite</p></li>
+    <li><p>Bloody, foul-smelling diarrhea, which can lead to dehydration</p></li>
+</ul></div>
+
+<p><b>Parvovirus Causes</b></p>
+ <div style="padding:2%"> <ul>
+   <li><p> Parvovirus is extremely contagious and can be transmitted to any person, animal or object that comes in contact with an infected dog’s feces.</p></li>
+    <li><p>The virus can live in the environment for months, and may survive on inanimate objects such as food bowls, shoes, clothes, carpet and floors.</p></li>
+    <li><p>Unvaccinated dogs can contract parvovirus from the streets, especially in urban areas where there are many dogs.</p></li>
+</ul></div>
+
+<p><b>Dogs More Prone to Parvovirus</b></p>
+ <div style="padding:2%"> <ul>
+    <li><p>Puppies, adolescent dogs and canines who are not vaccinated are most susceptible to the virus.</p></li>
+    <li><p>Breeds at higher risk are Rottweilers, Doberman pinschers, Labrador retrievers, American Staffordshire terriers and German shepherds.</p></li>
+</ul></div>
+
+<p><b>Parvovirus Prevention</b></p>
+ <div style="padding:2%"> <ul>
+    <li><p>Make sure your dog is up-to-date on his vaccinations. Parvovirus should be considered a core vaccine for all puppies and adult dogs.</p></li>
+   <li><p> Generally, the first vaccine is given at 6-8 weeks of age and a booster is given at four-week intervals until the puppy is 16-20 weeks of age, and then again at one year of age.</p></li>
+   <li><p> Older dogs who have not received full puppy vaccination series may be susceptible to parvovirus and should also receive at least one immunization.</p></li>
+</ul></div>
+
+<p>Because parvovirus can live in an environment for months, take extra care if there has been an infected dog in your house or yard. Parvo is resistant to many typical disinfectants and can be difficult to eradicate.</p>
+ <div style="padding:2%"> <ul>
+   <li><p> A solution of one part bleach to 32 parts water can be used where organic material is not present.</p></li>
+   <li><p> Clean and disinfect the infected dog’s toys, food dish and water bowl in this solution for 10 minutes. If these objects are not able to be disinfected, they should be discarded.</p></li>
+   <li><p> You can also use the solution on the soles of your shoes if you think you’ve walked through an infected area.</p></li>
+    <li><p>Areas that are harder to clean (grassy areas, carpeting and wood, for example) need to be sprayed with disinfectant or even resurfaced.</p></li>
+</ul></div>
+
+<p><b>Parvovirus Treatment</b></p>
+ <div style="padding:2%"> <ul>
+   <li><p> There are currently no drugs available that can kill the virus. Treatment consists of aggressive supportive care to control the symptoms and boost your dog’s immune system.</p></li>
+   <li><p> Dogs infected with parvovirus need intensive treatment in a veterinary hospital, where they will receive antibiotics to control secondary infections, drugs to control the vomiting, intravenous fluids to treat dehydration and other supportive therapies.</p></li>
+    <li><p>The average hospital stay is about 5-7 days.</p></li>
+   <li><p> Treatment is not always successful, so it is important to make sure your dog is vaccinated.</p></li>
+</ul></div>
+
+<p><b>When to See the Vet</b></p>
+ <div style="padding:2%"> <ul>
+   <li><p> Parvovirus is a dangerous disease that is often fatal. If you notice your dog experiencing severe vomiting, loss of appetite, depression or bloody diarrhea, contact your veterinarian immediately.</p></li>
+</ul></div>
+
+</div>
+</div><br><br>
+
+
+
+             <!--=============Rabies info
+                ==========================-->
+
+<h4 class="post mt-3">Rabies</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Rabies is a viral disease that may affect the brain and spinal cord of all mammals, including cats, dogs and humans. This preventable disease has been reported in every state except Hawaii. There’s good reason that the very word “rabies” evokes fear in people—once symptoms appear, rabies is close to 100% fatal.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+ <p><b>Rabies Transmission</b></p>
+
+<p>There are several reported routes of transmission of the rabies virus.</p>
+ <div style="padding:2%"> <ul>
+   <li><p> Rabies is most often transmitted through a bite from an infected animal.</p></li>
+   <li><p> Less frequently, it can be passed on when the saliva of an infected animal enters another animal’s body through mucous membranes or an open, fresh wound.</p></li>
+    <li><p>The risk for contracting rabies runs highest if your dog is exposed to wild animals. Outbreaks can occur in populations of wild animals (most often raccoons, bats, skunks and foxes in this country) or in areas where there are significant numbers of unvaccinated, free-roaming dogs and cats.</p></li>
+</ul></div>
+
+<p><b>Rabies Prevention</b></p>
+<div style="padding:2%"> <ul>
+   <li><p> Vaccination is the key—and in many areas of the country, such as New York City, it's the law.</p></li>
+    <li><p>Some local ordinances require lengthy quarantines—or euthanasia—of pets who have bitten someone if their owners do not have proof of current vaccination.</p></li>
+    <li><p>Vaccinating your dog doesn't just protect him from rabies—it also protects your dog if he bites someone. Dogs who have bitten humans are required to be confined for at least 10 days to see if rabies develops.</p></li>
+   <li><p> Avoiding contact with wild animals is also necessary to prevention. Walk your dog on a leash and supervise him while he’s outsoodrs.</p></li>
+</ul></div>
+
+<p><b>Symptoms of Rabies</b></p>
+<p>Animals will not show signs immediately following exposure to a rabid animal. Symptoms can be varied and can take between two and eight weeks to incubate. Classic signs of rabies in dogs include:</p>
+<div style="padding:2%"> <ul>
+    <li><p>Changes in behavior (including restlessness, apprehension, aggression or irritability)</p></li>
+    <li><p>Biting or snapping at any form of stimulus</p></li>
+   <li><p> Attacking other animals, humans and even inanimate objects</p></li>
+   <li><p> Licking, biting and chewing at the bite site</p></li>
+   <li><p> Fever</p></li>
+   <li><p> Hypersensitivity</p></li>
+   <li><p> Hiding in dark places</p></li>
+    <li><p>Eating unusual objects</p></li>
+   <li><p> Paralysis of the throat and jaw muscles</p></li>
+   <li><p> Foaming at the mouth</p></li>
+   <li><p> Disorientation, incoordination and staggering</p></li>
+    <li><p>Paralysis of the hind legs</p></li>
+   <li><p> Loss of appetite</p></li>
+   <li><p> Weakness</p></li>
+   <li><p> Seizures</p></li>
+   <li><p> Sudden death</p></li>
+</ul></div>
+
+<p>Transmission of the virus through saliva can happen as early as ten days before symptoms appear.</p>
+
+<p><b>Diagnosing Rabies</b></p>
+<div style="padding:2%"> <ul>
+   <li><p> There is no accurate test to diagnose rabies in live animals.</p></li>
+   <li><p> The direct fluorescent antibody test is the most accurate test for diagnosis, but it can only be performed after the death of the animal on brain tissue.</p></li>
+</ul></div>
+
+<p>There is no treatment or cure for rabies once symptoms appear. The disease results in death.</p>
+
+<p><b>What to Do if Your Dog Interacts With a Rabid Animal</b></p>
+<div style="padding:2%"> <ul>
+   <li><p> Call your veterinarian for an immediate appointment!</p></li>
+   <li><p> Contact local animal control officers if the animal who bit your pet is still at large; they will be best able to safely apprehend and remove the animal from the environment.</p></li>
+   <li><p> The rabies virus may remain alive on your pet’s skin for up to two hours. It is best not to touch your dog during this time. If you must handle your dog, wear gloves and protective clothing.</p></li>
+    <li><p>A dog who is up to date with his vaccinations and who has been bitten by a possibly rabid animal should also be given a rabies booster vaccine immediately and kept under observation (length will vary depending on your state laws).</p></li>
+    <li><p>If you think you’ve been bitten by a rabid animal, see your doctor immediately!</p></li>
+</ul></div>
+
+</div>
+</div><br><br>
+
+
+                <!--==========Ringworm
+                       =========================-->
+<h4 class="post mt-3">Ringworm</h4>
+ <div class="line" data-blast="bgColor"></div>
+<p>Although the name suggests otherwise, ringworm isn’t caused by a worm at all—but a fungus that can infect the skin, hair and nails. This highly contagious disease can lead to patchy areas of hair loss on a dog and can spread to other animals—and to humans, too.</p>
+<div class="collapsible"data-blast="color"><p data-blast="color"><i class="arrow right"></i > &nbsp&nbsp&nbsp Click here to read more</p> </div>
+<div class="content">
+        <div style="padding:2%"> 
+
+<p><b>Ringworm Symptoms</b></p>
+<p>Classic symptoms of ringworm in dogs include:</p>
+<div style="padding:2%"><ul>
+     <li><p> Skin lesions that typically appear on the head, ears, paws and forelimbs.</p></li>
+     <li><p> Ringworm can patchy, crusted, circular bald spots that sometimes look red in the center</p></li>
+     <li><p> In mild cases, there may be just a few broken hairs, while bad cases can spread over most of a dog’s body.</p></li>
+     <li><p> It’s also possible for a pet to carry the fungus and not show any symptoms whatsoever.</p></li>
+</ul></div>
+
+<p><b>Dogs More Prone to Ringworm.</b></p>
+<div style="padding:2%"><ul>
+    <li><p>  Puppies less than a year old are most prone to infection</p></li>
+    <li><p>  Malnourished, immunocompromised and stressed dogs are also at a greater risk.</p></li>
+    <li><p>  Ringworm can quickly spread in kennels, shelters and other places where there are many dogs in a close environment.</p></li>
+</ul></div>
+
+<p><b>Diagnosing Ringworm</b></p>
+<p>Because infection can potentially spread over a dog’s body and infect other animals and people, it is important that you see your vet for an accurate diagnosis if your pet is showing any signs of a skin problem.</p>
+<div style="padding:2%"><ul>
+    <li><p>  A veterinarian may use an ultraviolet light to diagnose ringworm, or may examine a fungal culture taken from the affected area.</p></li>
+</ul></div>
+
+<p><b>Treating Ringworm</b></p>
+<p>Treatment of ringworm depends on the severity of the infection.</p>
+<div style="padding:2%"><ul>
+    <li><p>  A veterinarian may prescribe a shampoo or ointment that contains a special medication to kill the fungus.</p></li>
+    <li><p>  In some cases, oral medications are necessary.</p></li>
+    <li><p>  It is important to treat your dog for as long as recommended by your veterinarian.</p></li>
+    <li><p>  Unfortunately, there is no guarantee that reinfection won’t occur.</p></li>
+</ul></div>
+
+<p>If your veterinarian has diagnosed your dog with ringworm, he or she will explain what you must do to prevent the fungus from spreading to your other pets—and to the human members of the household. But keep in mind that if you have other pets, it’s likely that most of them have been exposed as well. Your veterinarian may recommend that you do the following:</p>
+<div style="padding:2%"><ul>
+    <li><p>  Bathe all pets in the household with a medicated rinse or shampoo.</p></li>
+    <li><p>  Wash the infected animals’ bedding and toys with a disinfectant that kills ringworm spores.</p></li>
+    <li><p>  Discard items that are impossible to thoroughly disinfect (carpeted cat trees, etc.)</p></li>
+    <li><p>  Frequently vacuum to rid the house of infected hairs and skin cells. (Yes, the fungus can survive on hair and skin that your dog sheds!)</p></li>
+    <li><p>  Thoroughly wash your hands after you bathe or touch your cat.</p></li>
+</ul></div>
+
+</div>
+</div>
+
+
+
+<div class="dimg1">
+<img src="images/dogdis.jpg"width=70%>
+</div>
+
+
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible","arrow right");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+     
+    }
+  });
+}
+</script>
+
+              
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="mySidenav" class="sidenav" >
+ <div class="container" >
+                                              <a class="navbar-brand mx-auto" href="index.html"style="font-size:35px">Pet <span data-blast="color">Zone</span></a>
+                </div> <hr>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+ <ul>               
+ <li> <a href="dogsinfo.html"class="active" data-blast="color">Pet-Dogs</a></li>
+ <li>  <a href="catsinfo.html">Pet-Cats</a></li>
+ <li>  <a href="horsesinfo.html">Pet-Horses</a></li>
+ <li>  <a href="fishinfo.html">Pet-Fish</a></li>
+
+</ul>
+
+</div>
+
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("dots").style.marginLeft = "250px";
+ document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";   
+  document.getElementById("dots").style.marginLeft= "0";
+ document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/boost.js"></script>
+    <script src="js/blast.min.js"></script>
+    <!--  light box js -->
+    <script src="js/lightbox-plus-jquery.min.js">
+    </script>
+    <script>
+        // optional
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+    </script>
+    <!-- //light box js-->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
+
+
+
+
